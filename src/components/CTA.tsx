@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -28,8 +28,8 @@ const CTA = () => {
                 <div className="space-y-3 text-primary-foreground/90">
                   <p className="text-lg leading-relaxed">
                     <strong className="text-accent">Endereço:</strong><br />
-                    Av. José do Espírito Santo Araújo, nº 492<br />
-                    Perpétuo Socorro - Macapá, AP
+                    Av. José do Espírito Santo Araújo, n° 492<br />
+                    Perpétuo Socorro, Macapá - AP, 68905-627
                   </p>
                 </div>
               </div>
@@ -41,19 +41,16 @@ const CTA = () => {
                 </h3>
                 <div className="space-y-3">
                   <a 
-                    href="tel:+559600000000" 
+                    href="tel:+5596981293353" 
                     className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors group"
                   >
                     <Phone className="h-5 w-5 text-accent group-hover:scale-110 transition-transform" />
-                    <span className="text-lg">(96) 0000-0000</span>
+                    <span className="text-lg">(96) 98129-3353</span>
                   </a>
-                  <a 
-                    href="mailto:contato@figueiredo.adv.br" 
-                    className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors group"
-                  >
-                    <Mail className="h-5 w-5 text-accent group-hover:scale-110 transition-transform" />
-                    <span className="text-lg">contato@figueiredo.adv.br</span>
-                  </a>
+                  <div className="flex items-center gap-3 text-primary-foreground/90">
+                    <Clock className="h-5 w-5 text-accent" />
+                    <span className="text-lg">Aberto ⋅ Fecha às 18:00</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -63,8 +60,15 @@ const CTA = () => {
                 size="lg" 
                 variant="hero"
                 className="text-lg px-12 py-6 h-auto"
+                asChild
               >
-                Agendar Consulta Agora
+                <a 
+                  href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+Google.+Estou+falando+com+a+advogada+Daniele+Figueiredo%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Agendar Consulta Agora
+                </a>
               </Button>
               <p className="mt-4 text-sm text-primary-foreground/70">
                 Respondemos em até 24 horas
