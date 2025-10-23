@@ -15,6 +15,7 @@ const Hero = () => {
               alt="Advocacia Figueiredo" 
               width="160"
               height="160"
+              fetchPriority="high"
               className="h-32 md:h-40 w-auto drop-shadow-2xl"
             />
           </div>
