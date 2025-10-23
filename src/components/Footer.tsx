@@ -9,7 +9,9 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               <img 
                 src={symbol} 
-                alt="Figueiredo Symbol" 
+                alt="Figueiredo Symbol"
+                width="48"
+                height="48"
                 className="h-12 w-12"
               />
               <div className="text-primary-foreground/80">

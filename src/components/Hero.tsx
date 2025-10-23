@@ -13,6 +13,8 @@ const Hero = () => {
             <img 
               src={logo} 
               alt="Advocacia Figueiredo" 
+              width="160"
+              height="160"
               className="h-32 md:h-40 w-auto drop-shadow-2xl"
             />
           </div>
