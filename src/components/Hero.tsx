@@ -14,10 +14,10 @@ const Hero = () => {
             <img 
               src={heroBg} 
               alt="Advocacia Figueiredo" 
-              width="320"
-              height="160"
+              width="480"
+              height="240"
               fetchPriority="high"
-              className="h-32 md:h-40 w-auto drop-shadow-2xl"
+              className="h-48 md:h-60 lg:h-72 w-auto drop-shadow-2xl"
             />
           </div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
             <span className="text-lg font-medium">Macapá, Amapá</span>
           </div>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight animate-slide-up" style={{ animationDelay: "0.1s" }}>
             Soluções Jurídicas Confiáveis e Eficientes no Amapá
           </h1>
 
