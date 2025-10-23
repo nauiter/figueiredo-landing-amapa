@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Star, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.png";
+import logo3d from "@/assets/logo-3d.png";
 
 const Hero = () => {
   return (
@@ -12,12 +12,12 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="flex justify-center mb-8 animate-fade-in">
             <img 
-              src={heroBg} 
-              alt="Advocacia Figueiredo" 
-              width="480"
-              height="240"
+              src={logo3d} 
+              alt="Figueiredo - Sociedade de Advogadas" 
+              width="600"
+              height="200"
               fetchPriority="high"
-              className="h-48 md:h-60 lg:h-72 w-auto drop-shadow-2xl"
+              className="h-40 md:h-52 lg:h-64 w-auto drop-shadow-2xl"
             />
           </div>
 
