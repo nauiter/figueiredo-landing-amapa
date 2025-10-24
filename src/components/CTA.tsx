@@ -49,7 +49,7 @@ const CTA = () => {
                   </a>
                   <div className="flex items-center gap-3 text-primary-foreground/90">
                     <Clock className="h-5 w-5 text-accent" />
-                    <span className="text-lg">Aberto ⋅ Fecha às 18:00</span>
+                    <span className="text-lg">Segunda a Sexta · 08h às 18h</span>
                   </div>
                 </div>
               </div>
