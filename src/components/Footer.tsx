@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import symbol from "@/assets/symbol.png";
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <img 
-                src={logo} 
+                src={symbol} 
                 alt="Advocacia Figueiredo - Sociedade de Advogadas"
                 width="48"
                 height="48"

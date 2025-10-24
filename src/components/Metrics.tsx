@@ -27,7 +27,10 @@ const MetricCard = ({ metric, index }: { metric: typeof metrics[0]; index: numbe
     <div 
       ref={elementRef}
       className="text-center space-y-4 animate-fade-in"
-      style={{ animationDelay: `${index * 0.1}s` }}
+      style={{ 
+        animationDelay: `${index * 0.1}s`,
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)'
+      }}
     >
       <div className="flex justify-center">
         <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">
