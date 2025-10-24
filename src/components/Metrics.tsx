@@ -1,22 +1,50 @@
 import { Scale, FileText, Briefcase } from "lucide-react";
+import { useCounter } from "@/hooks/use-counter";
 
 const metrics = [
   {
     icon: Scale,
-    value: "750+",
+    value: 750,
     label: "Clientes Atendidos",
   },
   {
     icon: FileText,
-    value: "599+",
+    value: 599,
     label: "Contratos Feitos",
   },
   {
     icon: Briefcase,
-    value: "1.000+",
+    value: 1000,
     label: "Processos Executados",
   },
 ];
+
+const MetricCard = ({ metric, index }: { metric: typeof metrics[0]; index: number }) => {
+  const Icon = metric.icon;
+  const { count, elementRef } = useCounter(metric.value, 2000, index * 200);
+
+  return (
+    <div 
+      ref={elementRef}
+      className="text-center space-y-4 animate-fade-in"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <div className="flex justify-center">
+        <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">
+          <Icon className="h-10 w-10 text-white" strokeWidth={1.5} />
+        </div>
+      </div>
+      <div>
+        <h3 className="text-4xl md:text-5xl font-bold text-white mb-2">
+          {count.toLocaleString('pt-BR')}+
+        </h3>
+        <p className="text-lg text-white font-medium">
+          {metric.label}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const Metrics = () => {
   return (
@@ -25,30 +53,9 @@ const Metrics = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {metrics.map((metric, index) => {
-            const Icon = metric.icon;
-            return (
-              <div 
-                key={index}
-                className="text-center space-y-4 animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex justify-center">
-                  <div className="p-4 bg-primary/10 rounded-full">
-                    <Icon className="h-10 w-10 text-primary" strokeWidth={1.5} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                    {metric.value}
-                  </h3>
-                  <p className="text-lg text-primary-foreground font-medium">
-                    {metric.label}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+          {metrics.map((metric, index) => (
+            <MetricCard key={index} metric={metric} index={index} />
+          ))}
         </div>
       </div>
     </section>
