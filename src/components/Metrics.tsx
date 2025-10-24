@@ -1,0 +1,58 @@
+import { Scale, FileText, Briefcase } from "lucide-react";
+
+const metrics = [
+  {
+    icon: Scale,
+    value: "750+",
+    label: "Clientes Atendidos",
+  },
+  {
+    icon: FileText,
+    value: "599+",
+    label: "Contratos Feitos",
+  },
+  {
+    icon: Briefcase,
+    value: "1.000+",
+    label: "Processos Executados",
+  },
+];
+
+const Metrics = () => {
+  return (
+    <section className="bg-gradient-to-br from-accent via-accent/90 to-accent/80 py-16 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          {metrics.map((metric, index) => {
+            const Icon = metric.icon;
+            return (
+              <div 
+                key={index}
+                className="text-center space-y-4 animate-fade-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex justify-center">
+                  <div className="p-4 bg-primary/10 rounded-full">
+                    <Icon className="h-10 w-10 text-primary" strokeWidth={1.5} />
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                    {metric.value}
+                  </h3>
+                  <p className="text-lg text-primary-foreground font-medium">
+                    {metric.label}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Metrics;
