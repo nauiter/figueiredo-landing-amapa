@@ -28,22 +28,16 @@ const Trust = () => {
     <section id="sobre" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 space-y-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Por Que Escolher a Advocacia Figueiredo?
             </h2>
-            <div className="max-w-3xl mx-auto space-y-4">
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Com uma avaliação impecável de <span className="font-bold text-accent">5.0 estrelas no Google</span> 
-                {" "}baseada em 21 avaliações, somos reconhecidos pela excelência em nossos serviços jurídicos 
-                em Macapá e em toda a região do Amapá.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Nossa missão é oferecer soluções jurídicas completas e personalizadas, 
-                combinando expertise técnica com compromisso ético absoluto para proteger 
-                seus direitos e interesses.
-              </p>
-            </div>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Com histórico comprovado de excelência e resultados sólidos, a Advocacia Figueiredo é reconhecida pela precisão técnica e compromisso em cada caso atendido. Nosso trabalho é guiado por ética, dedicação e assertividade em todas as etapas do processo jurídico.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Nossa missão é oferecer soluções jurídicas completas e personalizadas, combinando expertise técnica com compromisso ético absoluto para proteger seus direitos e interesses.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

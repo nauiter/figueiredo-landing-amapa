@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import logo3d from "@/assets/logo-3d.png";
 
 const Hero = () => {
@@ -34,22 +34,16 @@ const Hero = () => {
             Defendemos seus direitos com excelência, ética e compromisso com resultados
           </h2>
 
-          <div className="flex items-center justify-center gap-3 pt-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <div className="flex gap-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 fill-accent text-accent" />
-              ))}
-            </div>
-            <span className="text-primary-foreground font-semibold text-lg">
-              5.0 ⭐ (21 avaliações)
-            </span>
+          <div className="pt-4 animate-slide-up" style={{ animationDelay: "0.3s" }}>
+            <p className="text-white text-lg font-medium">
+              Mais de 10 anos de serviços jurídicos prestados com excelência e confiança aos nossos clientes.
+            </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-slide-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <Button 
               size="lg" 
-              variant="hero"
-              className="text-lg px-8 py-6 h-auto"
+              className="text-lg px-8 py-6 h-auto bg-[#b8806e] hover:bg-[#a67160] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+Google.+Estou+falando+com+a+advogada+Daniele+Figueiredo%3F">
@@ -58,8 +52,7 @@ const Hero = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="text-lg px-8 py-6 h-auto bg-white/10 text-white border-white/20 hover:bg-white/20"
+              className="text-lg px-8 py-6 h-auto bg-transparent border-2 border-[#c99a85] text-white hover:bg-[#c99a85]/20 font-semibold transition-all duration-300"
               onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Conheça Nossos Serviços
