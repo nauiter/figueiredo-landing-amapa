@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { MapPin, MessageCircle } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import logo3d from "@/assets/logo-3d.png";
 
 const Hero = () => {
@@ -50,7 +52,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="h-5 w-5" />
+                <FontAwesomeIcon icon={faWhatsapp} className="h-5 w-5" />
                 Agende sua Consulta
               </a>
             </Button>
