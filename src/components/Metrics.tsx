@@ -1,5 +1,6 @@
 import { Scale, FileText, Briefcase } from "lucide-react";
 import { useCounter } from "@/hooks/use-counter";
+import ladyJusticeBanner from "@/assets/lady-justice-banner.png";
 
 const metrics = [
   {
@@ -51,8 +52,18 @@ const MetricCard = ({ metric, index }: { metric: typeof metrics[0]; index: numbe
 
 const Metrics = () => {
   return (
-    <section className="bg-gradient-to-br from-accent via-accent/90 to-accent/80 py-16 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNIDQwIDAgTCAwIDAgMCA0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-30"></div>
+    <section className="py-16 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url(${ladyJusticeBanner})` }}
+      ></div>
+      
+      {/* Copper Overlay */}
+      <div 
+        className="absolute inset-0"
+        style={{ backgroundColor: 'rgba(184, 128, 110, 0.7)' }}
+      ></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
