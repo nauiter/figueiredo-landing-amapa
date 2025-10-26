@@ -1,5 +1,4 @@
 import { Star, Quote } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -61,21 +60,6 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-6 h-auto text-lg shadow-rose-glow hover:shadow-xl hover:scale-105 transition-all duration-300"
-            asChild
-          >
-            <a 
-              href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+Google.+Estou+falando+com+a+advogada+Daniele+Figueiredo%3F"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Deixe seu depoimento
-            </a>
-          </Button>
-        </div>
       </div>
     </section>
   );
