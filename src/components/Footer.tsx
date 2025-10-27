@@ -63,8 +63,8 @@ const Footer = () => {
           <div className="text-center text-primary-foreground/70 text-sm space-y-2">
             <p>&copy; {new Date().getFullYear()} Advocacia Figueiredo. Todos os direitos reservados.</p>
             <p>Macapá, Amapá</p>
-            <p className="text-primary-foreground/60 flex items-center justify-center gap-1">
-              Desenvolvido com <span className="text-red-400">❤️</span> pela equipe Figueiredo Advocacia.
+            <p className="text-primary-foreground/60">
+              Desenvolvido por Nauiter Master.
             </p>
           </div>
         </div>

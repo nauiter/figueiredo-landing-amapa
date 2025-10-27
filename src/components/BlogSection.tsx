@@ -5,14 +5,17 @@ const articles = [
   {
     title: "Como resolver dívidas trabalhistas?",
     excerpt: "Entenda seus direitos e as melhores estratégias para negociar e quitar débitos trabalhistas de forma legal e segura.",
+    link: "https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/direitos-trabalhistas",
   },
   {
     title: "Direitos do consumidor: o que você precisa saber",
     excerpt: "Conheça as principais garantias do Código de Defesa do Consumidor e saiba quando acionar a Justiça.",
+    link: "https://www.gov.br/consumidor/pt-br",
   },
   {
     title: "Planejamento sucessório: proteja seu patrimônio",
     excerpt: "Descubra como organizar a herança de forma eficiente, evitando conflitos familiares e custos desnecessários.",
+    link: "https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/heranca-e-doacao",
   },
 ];
 
@@ -45,13 +48,15 @@ const BlogSection = () => {
                 {article.excerpt}
               </p>
               
-              <Button
-                variant="ghost"
-                className="text-accent hover:text-accent/80 hover:bg-accent/10 p-0 h-auto font-semibold group"
+              <a
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-accent hover:text-[#b8806e] font-semibold group transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#b8806e] after:transition-all after:duration-300 hover:after:w-full"
               >
                 Leia mais
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </a>
             </div>
           ))}
         </div>
