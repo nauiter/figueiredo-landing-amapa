@@ -1,6 +1,6 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import office1 from "@/assets/office/office-1.png";
 import office2 from "@/assets/office/office-2.png";
 import office3 from "@/assets/office/office-3.png";
@@ -99,6 +99,18 @@ const OfficeGallery = () => {
           >
             <ChevronRight className="h-6 w-6 text-foreground" />
           </button>
+        </div>
+
+        <div className="text-center mt-6">
+          <a
+            href="https://maps.app.goo.gl/g73t8NzpwPC4UCh47"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#b8806e] text-white font-semibold rounded-[10px] shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+          >
+            <MapPin className="h-5 w-5" />
+            Veja como chegar até nós
+          </a>
         </div>
       </div>
     </section>
