@@ -28,7 +28,7 @@ const officeImages = [
 const OfficeGallery = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
-    align: "start",
+    align: "center",
     slidesToScroll: 1,
   });
 
@@ -62,22 +62,21 @@ const OfficeGallery = () => {
           </p>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-4">
+        <div className="relative max-w-7xl mx-auto px-4">
+          <div className="overflow-hidden -mx-4" ref={emblaRef}>
+            <div className="flex">
               {officeImages.map((image, index) => (
                 <div
                   key={index}
-                  className="flex-[0_0_100%] md:flex-[0_0_calc(50%-8px)] lg:flex-[0_0_calc(33.333%-11px)] min-w-0"
+                  className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] min-w-0 px-2"
                 >
-                  <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.03]">
+                  <div className="relative overflow-hidden rounded-xl border border-white/40 transition-all duration-300 ease-in-out hover:scale-[1.03] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_18px_rgba(0,0,0,0.25)]">
                     <img
                       src={image}
                       alt={`Escritório Advocacia Figueiredo - Ambiente ${index + 1}`}
                       className="w-full h-[300px] object-cover"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                 </div>
               ))}
