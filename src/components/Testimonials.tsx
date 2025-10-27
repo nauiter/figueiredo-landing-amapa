@@ -3,18 +3,43 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Maria Santos",
-    text: "A Dra. Daniele conduziu meu caso com extrema competência e dedicação. Conseguiu resolver uma questão trabalhista que eu achava impossível. Recomendo de olhos fechados!",
-    rating: 5,
-  },
-  {
     name: "João Oliveira",
     text: "Profissionalismo e transparência em cada etapa do processo. A equipe da Figueiredo me manteve informado o tempo todo e conquistou um resultado excelente.",
     rating: 5,
   },
   {
-    name: "Ana Paula Costa",
-    text: "Atendimento humanizado e eficiente. Senti que meu caso era tratado com a importância que ele merecia. Gratidão por todo o suporte jurídico recebido.",
+    name: "Marina Santos",
+    text: "A Dra. Daniele resolveu meu caso com extrema competência e dedicação. Sempre atenciosa e clara nas orientações. Recomendo com total confiança.",
+    rating: 5,
+  },
+  {
+    name: "Rafael Lima",
+    text: "Excelente atendimento e comprometimento. A Advocacia Figueiredo conduziu meu processo com eficiência e empatia, sempre buscando a melhor solução.",
+    rating: 5,
+  },
+  {
+    name: "Paula Castro",
+    text: "Fui atendida pela Dra. Daniele Figueiredo em um momento muito delicado. Sua sensibilidade e firmeza jurídica fizeram toda a diferença. Profissional exemplar.",
+    rating: 5,
+  },
+  {
+    name: "Carlos Menezes",
+    text: "Equipe muito preparada e dedicada. O escritório Figueiredo solucionou uma questão trabalhista complexa com agilidade e resultado positivo.",
+    rating: 5,
+  },
+  {
+    name: "Luciana Prado",
+    text: "A Dra. Daniele é uma advogada extremamente ética e competente. Seu compromisso com a justiça é inspirador. Indico sem hesitar!",
+    rating: 5,
+  },
+  {
+    name: "André Barbosa",
+    text: "Atendimento humanizado e eficiente. Desde o primeiro contato senti segurança e confiança no trabalho do escritório.",
+    rating: 5,
+  },
+  {
+    name: "Fernanda Costa",
+    text: "Profissionais atenciosos e experientes. A Advocacia Figueiredo oferece um serviço jurídico de excelência, sempre com foco em resultados.",
     rating: 5,
   },
 ];
