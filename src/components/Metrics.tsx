@@ -55,8 +55,11 @@ const Metrics = () => {
     <section className="py-16 relative overflow-hidden">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: `url(${ladyJusticeBanner})` }}
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ 
+          backgroundImage: `url(${ladyJusticeBanner})`,
+          backgroundAttachment: 'scroll'
+        }}
       ></div>
       
       {/* Copper Overlay */}
