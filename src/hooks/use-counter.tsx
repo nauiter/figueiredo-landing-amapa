@@ -32,8 +32,9 @@ export const useCounter = (end: number, duration: number = 2000, delay: number =
     const timeout = setTimeout(() => {
       const startTime = Date.now();
       const startValue = 0;
+      let animationFrameId: number;
 
-      const timer = setInterval(() => {
+      const animate = () => {
         const now = Date.now();
         const progress = Math.min((now - startTime) / duration, 1);
         
@@ -43,13 +44,16 @@ export const useCounter = (end: number, duration: number = 2000, delay: number =
         
         setCount(currentCount);
 
-        if (progress === 1) {
-          clearInterval(timer);
+        if (progress < 1) {
+          animationFrameId = requestAnimationFrame(animate);
+        } else {
           setCount(end);
         }
-      }, 16); // ~60fps
+      };
 
-      return () => clearInterval(timer);
+      animationFrameId = requestAnimationFrame(animate);
+
+      return () => cancelAnimationFrame(animationFrameId);
     }, delay);
 
     return () => clearTimeout(timeout);
