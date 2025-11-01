@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import logo3d from "@/assets/logo-3d.png";
 
 const Hero = () => {
   return (
@@ -12,7 +11,7 @@ const Hero = () => {
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <div className="flex justify-center mb-8 animate-fade-in">
             <img 
-              src={logo3d} 
+              src="/logo-3d.png"
               alt="Figueiredo - Sociedade de Advogadas" 
               width="840"
               height="280"
