@@ -31,7 +31,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section aria-labelledby="faq-heading" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -39,7 +39,7 @@ const FAQ = () => {
             <div className="inline-flex p-3 rounded-full bg-accent/10 mb-4">
               <HelpCircle className="h-8 w-8 text-accent" />
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 id="faq-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Perguntas Frequentes
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">

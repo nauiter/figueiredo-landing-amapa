@@ -1,4 +1,5 @@
 import ScrollProgress from "@/components/ScrollProgress";
+import SkipLink from "@/components/SkipLink";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AuthorityStrip from "@/components/AuthorityStrip";
@@ -28,9 +29,12 @@ const Index = () => {
       <FAQSchema />
       <OrganizationSchema />
       
+      {/* Accessibility: Skip Link */}
+      <SkipLink />
+      
       <ScrollProgress />
       <Navbar />
-      <main className="min-h-screen">
+      <main id="main-content" className="min-h-screen" role="main" aria-label="Conteúdo principal">
         <Hero />
         <AuthorityStrip />
         <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
