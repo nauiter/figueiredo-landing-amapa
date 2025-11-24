@@ -55,13 +55,13 @@ const Hero = () => {
 
             {/* CTAs */}
             <div 
-              className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4 animate-fade-in"
+              className="flex flex-col sm:flex-row items-center gap-4 pt-4 animate-fade-in"
               style={{ animationDelay: "0.4s" }}
             >
               {/* Primary CTA - WhatsApp */}
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto max-w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 asChild
               >
                 <a 
@@ -79,7 +79,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="ghost"
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto border-2 border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold transition-all duration-300 group"
+                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto max-w-full border-2 border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold transition-all duration-300 group"
                 onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Play className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />

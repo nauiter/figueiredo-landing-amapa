@@ -70,18 +70,19 @@ const CookieBanner = () => {
             </div>
 
             {/* Actions */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
               <Button
                 onClick={handleReject}
                 variant="outline"
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 Rejeitar
               </Button>
               
               <Button
                 onClick={handleAccept}
-                className="bg-accent hover:bg-accent/90 text-primary font-semibold shadow-rose-glow"
+                className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-primary font-semibold shadow-rose-glow"
                 size="lg"
               >
                 Aceitar Cookies
