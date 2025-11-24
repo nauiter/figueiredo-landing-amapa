@@ -59,7 +59,7 @@ const CTA = () => {
               <Button 
                 size="lg" 
                 variant="hero"
-                className="text-lg px-12 py-6 h-auto"
+                className="text-base md:text-lg px-6 md:px-12 py-4 md:py-6 h-auto w-full md:w-auto max-w-full"
                 asChild
               >
                 <a 
