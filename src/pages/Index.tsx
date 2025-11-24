@@ -13,10 +13,18 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import FAQSchema from "@/components/seo/FAQSchema";
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
 
 const Index = () => {
   return (
     <>
+      {/* SEO Structured Data */}
+      <LocalBusinessSchema />
+      <FAQSchema />
+      <OrganizationSchema />
+      
       <ScrollProgress />
       <Navbar />
       <main className="min-h-screen">
