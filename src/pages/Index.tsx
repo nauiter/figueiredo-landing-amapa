@@ -8,6 +8,7 @@ import Services from "@/components/Services";
 import OfficeGallery from "@/components/OfficeGallery";
 import Testimonials from "@/components/Testimonials";
 import BlogSection from "@/components/BlogSection";
+import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
@@ -26,6 +27,7 @@ const Index = () => {
         <OfficeGallery />
         <Testimonials />
         <BlogSection />
+        <FAQ />
         <CTA />
         <Footer />
         <StickyMobileCTA />
