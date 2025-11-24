@@ -150,7 +150,6 @@ const Testimonials = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold"
             asChild
           >
             <a 
