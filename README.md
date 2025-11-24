@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# Figueiredo - Sociedade de Advogadas
 
-## Project info
+**Reliable and Efficient Legal Solutions in Amapá.**
 
-**URL**: https://lovable.dev/projects/d9bca607-de35-4042-8bd5-6ed5ec0189db
+A high-fidelity, responsive Single Page Application (SPA) designed for a premium law firm. It combines legal authority with a sophisticated digital presence.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ⚖️ Project Overview
 
-**Use Lovable**
+An interactive experience featuring:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d9bca607-de35-4042-8bd5-6ed5ec0189db) and start prompting.
+- **"Rose Gold" Design System:** A sophisticated aesthetic using dark themes, rose gold gradients, and glassmorphism effects that convey professionalism and elegance.
+- **Interactive Elements:** Smooth scroll navigation, animated entrance effects (fade-ins), and hover interactions that enhance user engagement.
+- **Service Showcase:** Detailed presentation of Civil, Labor, and Family Law services with custom iconography for clear visual communication.
+- **Trust & Authority:** Animated metrics counter displaying key performance indicators (Clients, Contracts, Processes) and a carousel of client testimonials building credibility.
+- **Office Immersion:** An interactive image carousel (Embla Carousel) displaying the physical office structure, providing transparency and authenticity.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚀 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Core:** [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) + [Tailwind Animate](https://github.com/jamiebuilds/tailwindcss-animate)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI Primitives)
+- **Interactivity:** [Embla Carousel](https://www.embla-carousel.com/) (Gallery) + Custom Hooks (useCounter, useMobile)
+- **State Management:** [TanStack Query](https://tanstack.com/query/latest)
+- **Icons:** [Lucide React](https://lucide.dev/) + [FontAwesome](https://fontawesome.com/)
+- **Backend/Integrations:** [Supabase](https://supabase.com/) (Client Configured)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Installation & Local Development
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+Follow these steps to run the project locally:
+
+```bash
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
+
+# Step 5: Build for production
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📄 Project Structure
 
-**Use GitHub Codespaces**
+```
+/src
+├── /components        # UI primitives and Section components (Hero, About, Metrics, Services, etc.)
+├── /hooks            # Custom logic (use-toast, use-counter, use-mobile)
+├── /lib              # Utils and configurations
+├── /assets           # Images, 3D Logos, and office gallery
+├── /integrations     # Supabase client configuration
+└── /pages            # Application pages and routing
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📱 Features
 
-This project is built with:
+- ✅ Fully responsive design optimized for all devices
+- ✅ SEO-optimized with semantic HTML and meta tags
+- ✅ Accessibility-first approach with ARIA attributes
+- ✅ Performance-optimized with lazy loading and code splitting
+- ✅ Google Search Console verified
+- ✅ Modern UI with smooth animations and transitions
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 🔗 Useful Links
 
-Simply open [Lovable](https://lovable.dev/projects/d9bca607-de35-4042-8bd5-6ed5ec0189db) and click on Share -> Publish.
+- **Live Demo:** [https://figueiredo-landing-amapa.lovable.app](https://figueiredo-landing-amapa.lovable.app)
+- **Documentation:** [Lovable Docs](https://docs.lovable.dev)
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+© 2025 Figueiredo Advocacia. Developed by Nauiter Master.
