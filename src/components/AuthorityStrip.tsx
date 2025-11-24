@@ -26,7 +26,7 @@ const AuthorityStrip = () => {
             Credenciada e Reconhecida Por
           </p>
           
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 lg:gap-16">
             {institutions.map((institution, index) => {
               const Icon = institution.icon;
               return (
