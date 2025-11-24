@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AuthorityStrip from "@/components/AuthorityStrip";
 import Metrics from "@/components/Metrics";
@@ -13,20 +14,23 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
-      <Hero />
-      <AuthorityStrip />
-      <Trust />
-      <Metrics />
-      <About />
-      <Services />
-      <OfficeGallery />
-      <Testimonials />
-      <BlogSection />
-      <CTA />
-      <Footer />
-      <StickyMobileCTA />
-    </main>
+    <>
+      <Navbar />
+      <main className="min-h-screen">
+        <Hero />
+        <AuthorityStrip />
+        <Trust />
+        <Metrics />
+        <About />
+        <Services />
+        <OfficeGallery />
+        <Testimonials />
+        <BlogSection />
+        <CTA />
+        <Footer />
+        <StickyMobileCTA />
+      </main>
+    </>
   );
 };
 

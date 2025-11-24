@@ -50,7 +50,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl h-[400px] md:h-[450px] cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20"
+                className="group relative overflow-hidden rounded-2xl h-[400px] md:h-[450px] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Background Image */}

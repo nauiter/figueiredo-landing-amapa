@@ -21,7 +21,7 @@ const Footer = () => {
           {" "}| Todos os direitos reservados
         </p>
         <span className="block mt-2 text-[0.85rem] text-white/70 italic">
-          Compromisso com a Justiça e a Ética
+          Sic Mundus Creatus Est
         </span>
       </div>
     </footer>
