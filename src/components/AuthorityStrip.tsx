@@ -1,18 +1,19 @@
+import { Scale, Award, Landmark } from "lucide-react";
+
+// TODO: Substituir ícones genéricos pelos logos reais (OAB, IBDFAM, TJAP)
+// quando os arquivos estiverem disponíveis na pasta src/assets/
 const institutions = [
   {
     name: "OAB - Ordem dos Advogados do Brasil",
-    logo: "https://placehold.co/200x100/1A1A1A/6B7280?text=OAB",
-    colorLogo: "https://placehold.co/200x100/1A1A1A/c99a85?text=OAB"
+    icon: Scale
   },
   {
     name: "IBDFAM - Instituto Brasileiro de Direito de Família",
-    logo: "https://placehold.co/200x100/1A1A1A/6B7280?text=IBDFAM",
-    colorLogo: "https://placehold.co/200x100/1A1A1A/c99a85?text=IBDFAM"
+    icon: Award
   },
   {
     name: "TJAP - Tribunal de Justiça do Amapá",
-    logo: "https://placehold.co/200x100/1A1A1A/6B7280?text=TJAP",
-    colorLogo: "https://placehold.co/200x100/1A1A1A/c99a85?text=TJAP"
+    icon: Landmark
   }
 ];
 
@@ -26,23 +27,22 @@ const AuthorityStrip = () => {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
-            {institutions.map((institution, index) => (
-              <div
-                key={index}
-                className="group relative grayscale hover:grayscale-0 transition-all duration-500 opacity-60 hover:opacity-100"
-              >
-                <img 
-                  src={institution.logo}
-                  alt={institution.name}
-                  className="h-16 md:h-20 w-auto object-contain group-hover:hidden transition-all"
-                />
-                <img 
-                  src={institution.colorLogo}
-                  alt={institution.name}
-                  className="h-16 md:h-20 w-auto object-contain hidden group-hover:block transition-all"
-                />
-              </div>
-            ))}
+            {institutions.map((institution, index) => {
+              const Icon = institution.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative transition-all duration-500 opacity-60 hover:opacity-100"
+                >
+                  <div className="flex flex-col items-center gap-2 p-6 rounded-xl border border-white/5 hover:border-accent/30 transition-all duration-500 hover:bg-accent/5">
+                    <Icon className="h-12 w-12 md:h-16 md:w-16 text-white/40 group-hover:text-accent transition-colors duration-500" />
+                    <span className="text-xs text-white/40 group-hover:text-accent/80 transition-colors duration-500 text-center max-w-[120px]">
+                      {institution.name.split(' - ')[0]}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
