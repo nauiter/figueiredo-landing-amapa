@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import BlogSection from "@/components/BlogSection";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
       <BlogSection />
       <CTA />
       <Footer />
+      <StickyMobileCTA />
     </main>
   );
 };
