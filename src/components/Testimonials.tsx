@@ -1,5 +1,6 @@
 import React from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ExternalLink, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -58,15 +59,34 @@ const Testimonials = () => {
   return (
     <section className="py-16 md:py-24 bg-[#1f1f1f]">
       <div className="container mx-auto px-4">
+        {/* Header with Social Proof */}
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-12 animate-fade-in">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-6 w-6 fill-accent text-accent" />
+              ))}
+            </div>
+            <span className="text-white/70 text-lg font-semibold">5.0</span>
+          </div>
+          
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             A confiança de nossos clientes fala por nós
           </h2>
+          
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Garantimos um atendimento jurídico transparente e eficiente. A confiança de nossos clientes é nossa maior conquista.
+            Mais de <strong className="text-accent">750 clientes atendidos</strong> com excelência. 
+            Veja o que dizem sobre nosso trabalho.
           </p>
+          
+          {/* Verified Badge */}
+          <div className="flex items-center justify-center gap-2 text-accent">
+            <CheckCircle2 className="h-5 w-5" />
+            <span className="text-sm font-medium">Depoimentos Verificados</span>
+          </div>
         </div>
 
+        {/* Testimonials Carousel */}
         <div className="max-w-4xl mx-auto relative">
           <div className="overflow-hidden">
             <div 
@@ -78,12 +98,13 @@ const Testimonials = () => {
                   key={index}
                   className="w-full flex-shrink-0 px-4"
                 >
-                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 shadow-elegant">
-                    <div className="mb-4">
+                  <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 shadow-elegant hover:border-accent/30 transition-all duration-300">
+                    <div className="mb-4 flex items-center justify-between">
                       <Quote className="h-8 w-8 text-accent opacity-50" />
+                      <CheckCircle2 className="h-5 w-5 text-accent" />
                     </div>
                     
-                    <p className="text-white text-lg mb-6 leading-relaxed">
+                    <p className="text-white text-lg mb-6 leading-relaxed min-h-[120px]">
                       "{testimonial.text}"
                     </p>
                     
@@ -93,9 +114,10 @@ const Testimonials = () => {
                           <Star key={i} className="h-5 w-5 fill-accent text-accent" />
                         ))}
                       </div>
-                      <p className="font-semibold text-white">
+                      <p className="font-semibold text-white text-lg">
                         {testimonial.name}
                       </p>
+                      <p className="text-white/50 text-sm">Cliente Verificado</p>
                     </div>
                   </div>
                 </div>
@@ -103,7 +125,8 @@ const Testimonials = () => {
             </div>
           </div>
           
-          <div className="flex justify-center gap-2 mt-6">
+          {/* Navigation Dots */}
+          <div className="flex justify-center gap-2 mt-8">
             {testimonials.map((_, index) => (
               <button
                 key={index}
@@ -119,6 +142,28 @@ const Testimonials = () => {
           </div>
         </div>
 
+        {/* Call to Action - Add Your Review */}
+        <div className="text-center mt-12 animate-fade-in">
+          <p className="text-white/60 mb-4 text-lg">
+            Você também foi atendido por nós?
+          </p>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold"
+            asChild
+          >
+            <a 
+              href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+gostaria+de+deixar+um+depoimento+sobre+o+atendimento."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
+              Deixe seu Depoimento
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
