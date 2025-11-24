@@ -36,7 +36,7 @@ const Services = () => {
     <section id="servicos" className="py-20 md:py-28 bg-black">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
+          <div className="text-center mb-16 space-y-4 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-white">
               Nossas Especialidades
             </h2>
@@ -50,8 +50,8 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl h-[400px] md:h-[450px] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="group relative overflow-hidden rounded-2xl h-[400px] md:h-[450px] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20 animate-slide-up"
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Background Image */}
                 <div className="absolute inset-0 transition-transform duration-700 group-hover:scale-110">
