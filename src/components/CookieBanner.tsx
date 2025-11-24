@@ -74,7 +74,6 @@ const CookieBanner = () => {
               <Button
                 onClick={handleReject}
                 variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 hover:border-white/30"
                 size="lg"
               >
                 Rejeitar
