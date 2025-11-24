@@ -1,151 +1,151 @@
 # Figueiredo Advocacia
 
-**Soluções Jurídicas Confiáveis e Eficientes no Amapá**
+**Reliable and Efficient Legal Solutions in Amapá**
 
-Site institucional desenvolvido para a Figueiredo Advocacia, escritório com mais de 13 anos de experiência oferecendo serviços jurídicos de excelência em Macapá-AP. Aplicação moderna, responsiva e otimizada para SEO.
-
----
-
-## ⚖️ Sobre o Projeto
-
-Plataforma digital sofisticada apresentando:
-
-- **Design System "Rose Gold":** Estética elegante com tema escuro, gradientes rose gold e efeitos glassmorphism que transmitem profissionalismo e autoridade.
-- **Elementos Interativos:** Navegação suave, animações de entrada (fade-ins), e interações hover que aumentam o engajamento do usuário.
-- **Showcase de Serviços:** Apresentação detalhada das áreas de atuação (Direito Civil, Trabalhista, Imobiliário e de Família) com iconografia personalizada.
-- **Confiança & Autoridade:** Métricas animadas exibindo indicadores-chave (750+ clientes atendidos, 599+ contratos, 1000+ processos) e carrossel de depoimentos verificados.
-- **Imersão no Escritório:** Galeria interativa (Embla Carousel) apresentando a estrutura física do escritório, proporcionando transparência e autenticidade.
-- **Acessibilidade Completa:** Implementação de WCAG 2.1 AA com skip links, semantic landmarks, ARIA labels e focus states.
+Institutional website developed for Figueiredo Advocacia, a law firm with over 13 years of experience offering excellent legal services in Macapá-AP, Brazil. Modern, responsive, and SEO-optimized application.
 
 ---
 
-## 🚀 Stack Tecnológica
+## ⚖️ About the Project
+
+Sophisticated digital platform featuring:
+
+- **"Rose Gold" Design System:** Elegant aesthetic with dark theme, rose gold gradients, and glassmorphism effects that convey professionalism and authority.
+- **Interactive Elements:** Smooth scroll navigation, entrance animations (fade-ins), and hover interactions that enhance user engagement.
+- **Services Showcase:** Detailed presentation of practice areas (Civil Law, Labor Law, Real Estate Law, and Family Law) with custom iconography.
+- **Trust & Authority:** Animated metrics displaying key indicators (750+ clients served, 599+ contracts, 1000+ cases) and carousel of verified testimonials.
+- **Office Immersion:** Interactive gallery (Embla Carousel) showcasing the physical office structure, providing transparency and authenticity.
+- **Complete Accessibility:** WCAG 2.1 AA implementation with skip links, semantic landmarks, ARIA labels, and focus states.
+
+---
+
+## 🚀 Tech Stack
 
 - **Core:** [React 18](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/)
-- **Estilização:** [Tailwind CSS](https://tailwindcss.com/) + [Tailwind Animate](https://github.com/jamiebuilds/tailwindcss-animate)
-- **Componentes UI:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI Primitives)
-- **Interatividade:** [Embla Carousel](https://www.embla-carousel.com/) + Custom Hooks (useCounter, useMobile)
-- **Gerenciamento de Estado:** [TanStack Query](https://tanstack.com/query/latest)
-- **Ícones:** [Lucide React](https://lucide.dev/) + [FontAwesome](https://fontawesome.com/)
-- **Roteamento:** [React Router DOM](https://reactrouter.com/)
-- **Backend:** [Supabase](https://supabase.com/) (Cliente Configurado)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) + [Tailwind Animate](https://github.com/jamiebuilds/tailwindcss-animate)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/) (Radix UI Primitives)
+- **Interactivity:** [Embla Carousel](https://www.embla-carousel.com/) + Custom Hooks (useCounter, useMobile)
+- **State Management:** [TanStack Query](https://tanstack.com/query/latest)
+- **Icons:** [Lucide React](https://lucide.dev/) + [FontAwesome](https://fontawesome.com/)
+- **Routing:** [React Router DOM](https://reactrouter.com/)
+- **Backend:** [Supabase](https://supabase.com/) (Client Configured)
 
 ---
 
-## 🛠️ Instalação & Desenvolvimento Local
+## 🛠️ Installation & Local Development
 
-Siga os passos abaixo para executar o projeto localmente:
+Follow these steps to run the project locally:
 
 ```bash
-# Passo 1: Clone o repositório
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Passo 2: Navegue até o diretório do projeto
+# Step 2: Navigate to the project directory
 cd figueiredo-advocacia
 
-# Passo 3: Instale as dependências
+# Step 3: Install dependencies
 npm install
 
-# Passo 4: Inicie o servidor de desenvolvimento
+# Step 4: Start the development server
 npm run dev
 
-# Passo 5: Build para produção
+# Step 5: Build for production
 npm run build
 ```
 
 ---
 
-## 📄 Estrutura do Projeto
+## 📄 Project Structure
 
 ```
 /src
-├── /components          # Componentes UI e seções (Hero, About, Metrics, Services, etc.)
-│   ├── /seo            # Schemas estruturados (LocalBusiness, Organization, FAQ)
-│   └── /ui             # Componentes shadcn/ui customizados
-├── /hooks              # Hooks customizados (use-toast, use-counter, use-mobile)
-├── /lib                # Utilitários e configurações
-├── /assets             # Imagens, logos 3D e galeria do escritório
-├── /integrations       # Configuração do cliente Supabase
-└── /pages              # Páginas da aplicação (Index, NotFound, Privacy)
+├── /components          # UI components and sections (Hero, About, Metrics, Services, etc.)
+│   ├── /seo            # Structured schemas (LocalBusiness, Organization, FAQ)
+│   └── /ui             # Customized shadcn/ui components
+├── /hooks              # Custom hooks (use-toast, use-counter, use-mobile)
+├── /lib                # Utilities and configurations
+├── /assets             # Images, 3D logos, and office gallery
+├── /integrations       # Supabase client configuration
+└── /pages              # Application pages (Index, NotFound, Privacy)
 ```
 
 ---
 
-## 📱 Funcionalidades
+## 📱 Features
 
-- ✅ **Design Responsivo:** Otimizado para mobile (320px+), tablet (768px-1024px) e desktop (1024px+)
-- ✅ **SEO Avançado:** Schema.org (LocalBusiness, Organization, FAQ), meta tags otimizadas, sitemap.xml
-- ✅ **Acessibilidade WCAG 2.1 AA:** Skip links, semantic HTML, ARIA labels, navegação por teclado
-- ✅ **Performance Otimizada:** Lazy loading, code splitting, imagens otimizadas
-- ✅ **Google Search Console:** Verificado e indexado
-- ✅ **Animações Suaves:** Fade-in, slide-up, hover effects com Tailwind Animate
-- ✅ **WhatsApp Integration:** CTAs estratégicos para conversão
-- ✅ **Cookie Compliance:** Banner LGPD com gestão de consentimento
+- ✅ **Responsive Design:** Optimized for mobile (320px+), tablet (768px-1024px), and desktop (1024px+)
+- ✅ **Advanced SEO:** Schema.org (LocalBusiness, Organization, FAQ), optimized meta tags, sitemap.xml
+- ✅ **WCAG 2.1 AA Accessibility:** Skip links, semantic HTML, ARIA labels, keyboard navigation
+- ✅ **Performance Optimized:** Lazy loading, code splitting, optimized images
+- ✅ **Google Search Console:** Verified and indexed
+- ✅ **Smooth Animations:** Fade-in, slide-up, hover effects with Tailwind Animate
+- ✅ **WhatsApp Integration:** Strategic CTAs for conversion
+- ✅ **Cookie Compliance:** LGPD banner with consent management
 
 ---
 
 ## 🎨 Design System
 
-### Paleta de Cores
+### Color Palette
 - **Primary:** `#1a0b0f` (Dark Brown/Black)
 - **Accent:** `#b8806e` (Rose Gold)
-- **Background:** Gradientes dark com overlays rose gold
-- **Typography:** Hierarquia clara com fontes web otimizadas
+- **Background:** Dark gradients with rose gold overlays
+- **Typography:** Clear hierarchy with optimized web fonts
 
-### Componentes Customizados
-- Buttons com variantes: `default`, `outline`, `hero`, `ghost`
-- Cards com hover states e shadow-rose-glow
-- Accordions, Dialogs, Carousels totalmente responsivos
-- Toast notifications para feedback do usuário
+### Custom Components
+- Buttons with variants: `default`, `outline`, `hero`, `ghost`
+- Cards with hover states and shadow-rose-glow
+- Fully responsive Accordions, Dialogs, Carousels
+- Toast notifications for user feedback
 
 ---
 
-## 🌐 Deploy
+## 🌐 Deployment
 
-**Website Oficial:** [https://figueiredoadv.com.br](https://figueiredoadv.com.br)
+**Official Website:** [https://figueiredoadv.com.br](https://figueiredoadv.com.br)
 
-### Tecnologias de Deploy
-- Frontend hospedado com otimização automática
-- CDN para assets estáticos
-- SSL/HTTPS habilitado
-- Monitoramento de performance
+### Deployment Technologies
+- Frontend hosted with automatic optimization
+- CDN for static assets
+- SSL/HTTPS enabled
+- Performance monitoring
 
 ---
 
 ## 📊 SEO & Analytics
 
-- ✅ Structured Data (JSON-LD) implementado
-- ✅ Meta tags Open Graph e Twitter Cards
-- ✅ Sitemap XML gerado automaticamente
-- ✅ Robots.txt configurado
-- ✅ Google Search Console verificado
-- 🔄 Google Analytics 4 (recomendado para configuração futura)
+- ✅ Structured Data (JSON-LD) implemented
+- ✅ Open Graph and Twitter Cards meta tags
+- ✅ Automatically generated XML sitemap
+- ✅ Configured robots.txt
+- ✅ Google Search Console verified
+- 🔄 Google Analytics 4 (recommended for future setup)
 
 ---
 
-## 🔐 Privacidade & Segurança
+## 🔐 Privacy & Security
 
-- Política de Privacidade LGPD compliance
-- Cookie consent banner com gerenciamento de preferências
-- Formulários com validação client-side
-- Links externos com `rel="noopener noreferrer"`
+- LGPD-compliant Privacy Policy
+- Cookie consent banner with preference management
+- Client-side form validation
+- External links with `rel="noopener noreferrer"`
 
 ---
 
-## 📞 Contato
+## 📞 Contact
 
 **Figueiredo Advocacia**
-- 📍 Av. José do Espírito Santo Araújo, n° 492, Perpétuo Socorro, Macapá - AP, 68905-627
-- 📞 (96) 98129-3353
-- ⏰ Segunda a Sexta · 08h às 18h
+- 📍 Av. José do Espírito Santo Araújo, n° 492, Perpétuo Socorro, Macapá - AP, 68905-627, Brazil
+- 📞 +55 (96) 98129-3353
+- ⏰ Monday to Friday · 8 AM - 6 PM (BRT)
 - 🌐 [figueiredoadv.com.br](https://figueiredoadv.com.br)
 
 ---
 
-## 👨‍💻 Desenvolvimento
+## 👨‍💻 Development
 
-Desenvolvido por **Nauiter Master** com tecnologias modernas para garantir performance, acessibilidade e experiência do usuário de alto nível.
+Developed by **Nauiter Master** using modern technologies to ensure high-level performance, accessibility, and user experience.
 
 ---
 
-© 2025 Figueiredo Advocacia. Todos os direitos reservados.
+© 2025 Figueiredo Advocacia. All rights reserved.
