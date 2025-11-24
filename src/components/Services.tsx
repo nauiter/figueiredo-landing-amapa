@@ -59,6 +59,7 @@ const Services = () => {
                     src={service.background}
                     alt={service.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   {/* Dark Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40"></div>
