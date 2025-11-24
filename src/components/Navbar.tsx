@@ -37,6 +37,8 @@ const Navbar = () => {
 
   return (
     <nav
+      role="navigation"
+      aria-label="Navegação principal"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? "bg-black/95 backdrop-blur-lg shadow-lg border-b border-white/10"
@@ -48,7 +50,8 @@ const Navbar = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("#inicio")}
-            className="flex items-center"
+            className="flex items-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black rounded-lg"
+            aria-label="Ir para o início da página"
           >
             <img
               src={logo3D}
@@ -63,7 +66,8 @@ const Navbar = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-white/90 hover:text-accent font-medium transition-colors relative group"
+                className="text-white/90 hover:text-accent font-medium transition-colors relative group focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-black rounded px-2 py-1"
+                aria-label={`Navegar para ${link.label}`}
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
