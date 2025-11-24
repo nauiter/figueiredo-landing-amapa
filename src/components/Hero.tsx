@@ -7,7 +7,7 @@ import logo3D from "@/assets/logo-3d.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Rose Gold Radial Gradient Glow */}
       <div className="absolute inset-0 bg-gradient-radial from-[#c99a85]/20 via-transparent to-transparent opacity-60"></div>
       
@@ -80,6 +80,7 @@ const Hero = () => {
                 size="lg" 
                 variant="ghost"
                 className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto border-2 border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold transition-all duration-300 group"
+                onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Play className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
                 Conheça Nossa História

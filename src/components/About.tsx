@@ -2,7 +2,7 @@ import { Building2 } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-background to-secondary/10">
+    <section id="sobre" className="py-20 bg-gradient-to-br from-background to-secondary/10">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">

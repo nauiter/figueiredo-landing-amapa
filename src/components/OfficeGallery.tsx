@@ -102,7 +102,7 @@ const OfficeGallery = () => {
 
         <div className="text-center mt-6">
           <a
-            href="https://maps.app.goo.gl/g73t8NzpwPC4UCh47"
+            href="https://www.google.com/maps/search/?api=1&query=Av.+José+do+Espírito+Santo+Araújo,+n°+492,+Macapá+-+AP"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#b8806e] text-white font-semibold rounded-[10px] shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
