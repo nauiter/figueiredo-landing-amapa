@@ -14,6 +14,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import CookieBanner from "@/components/CookieBanner";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 import FAQSchema from "@/components/seo/FAQSchema";
 import OrganizationSchema from "@/components/seo/OrganizationSchema";
@@ -51,6 +52,7 @@ const Index = () => {
         <Footer />
         <StickyMobileCTA />
         <WhatsAppWidget />
+        <CookieBanner />
       </main>
     </>
   );
