@@ -18,7 +18,7 @@ const institutions = [
 
 const AuthorityStrip = () => {
   return (
-    <section className="py-12 bg-[#1A1A1A]">
+    <section className="py-12 md:py-16 bg-[#1A1A1A]">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <p className="text-center text-white/60 text-sm font-medium mb-8 uppercase tracking-wider">
