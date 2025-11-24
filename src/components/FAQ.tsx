@@ -8,24 +8,24 @@ import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
-    question: "Como agendar uma consulta?",
-    answer: "Agendar uma consulta é simples e rápido! Você pode entrar em contato conosco através do WhatsApp clicando no botão verde na parte inferior da tela ou nos botões 'Falar com Advogada' espalhados pelo site. Também aceitamos agendamentos por telefone no (96) 98129-3353. Nosso horário de atendimento é de segunda a sexta, das 8h às 18h. A primeira consulta serve para entendermos sua situação e apresentarmos as melhores estratégias jurídicas para o seu caso."
+    question: "Como funciona a consulta inicial?",
+    answer: "Realizamos uma análise detalhada do seu caso, podendo ser presencial em nosso escritório em Macapá ou online via videochamada. Durante a consulta, ouvimos sua situação, analisamos a documentação e apresentamos as melhores estratégias jurídicas para resolver seu caso. É um momento para tirar todas as suas dúvidas e entender como podemos ajudá-lo."
   },
   {
-    question: "O atendimento é online ou presencial?",
-    answer: "Oferecemos ambas as modalidades para sua comodidade! Nosso escritório está localizado em Macapá-AP, onde realizamos atendimentos presenciais em um ambiente acolhedor e profissional. Também disponibilizamos consultas online via videoconferência para clientes que preferem o atendimento remoto ou que estão em outras cidades. A escolha é sua - priorizamos sempre a forma que for mais conveniente para você, mantendo a mesma qualidade e dedicação em ambos os formatos."
+    question: "Quais áreas vocês atendem?",
+    answer: "Somos especialistas em Direito Civil, Direito Trabalhista, Direito Imobiliário e Direito de Família e Sucessões. Atuamos em processos judiciais, negociações extrajudiciais, elaboração de contratos, consultoria preventiva e todas as demandas relacionadas a essas áreas do direito."
   },
   {
-    question: "Quais documentos preciso levar para a primeira consulta?",
-    answer: "Para otimizar o atendimento, recomendamos trazer: documentos pessoais (RG, CPF), comprovante de residência, e qualquer documentação relacionada ao seu caso jurídico (contratos, notificações, processos anteriores, e-mails, mensagens, fotos, etc.). Se for um caso trabalhista, traga carteira de trabalho e comprovantes de pagamento. Para questões imobiliárias, escrituras e contratos de compra/venda. Em casos de família, certidões de casamento/nascimento. Não se preocupe se não tiver tudo - traremos orientações específicas após o primeiro contato."
+    question: "O atendimento é apenas para Macapá?",
+    answer: "Nossa sede física está localizada em Macapá-AP, mas atendemos clientes de todo o Brasil através de consultas digitais por videochamada. Utilizamos tecnologia para oferecer o mesmo padrão de excelência e atendimento humanizado, independentemente da sua localização. Para processos judiciais, avaliamos a viabilidade conforme a comarca."
   },
   {
-    question: "Vocês atuam em quais cidades e regiões?",
-    answer: "Nosso escritório está sediado em Macapá-AP e atendemos clientes em todo o estado do Amapá, incluindo Santana, Laranjal do Jari, Oiapoque, e demais municípios. Através do atendimento online, também prestamos consultoria jurídica para clientes em outras regiões do Brasil, especialmente em questões que envolvem legislação federal (direito trabalhista, civil, família e consumidor). Para processos judiciais, avaliamos a viabilidade de atuação conforme a comarca e complexidade do caso."
+    question: "Quais documentos devo levar para a consulta?",
+    answer: "Recomendamos trazer RG, CPF, comprovante de residência e todos os documentos relacionados ao seu caso ou processo (contratos, notificações, e-mails, mensagens, comprovantes, certidões, etc.). Quanto mais informações você trouxer, melhor será nossa análise inicial. Caso não tenha toda a documentação, não se preocupe - orientaremos você sobre o que será necessário reunir."
   },
   {
-    question: "Como funciona o pagamento de honorários advocatícios?",
-    answer: "Trabalhamos com total transparência nos honorários. Os valores são definidos após a análise inicial do caso, considerando sua complexidade, urgência e tempo estimado. Oferecemos diferentes modalidades de pagamento: honorários fixos (valor acordado no início), honorários por hora trabalhada, ou êxito (percentual sobre o resultado obtido - comum em ações trabalhistas e de cobrança). Parcelamento e formas de pagamento são flexíveis e discutidos na consulta inicial. Fornecemos sempre contrato de honorários detalhado antes de iniciarmos qualquer trabalho."
+    question: "Aceitam parcelamento de honorários?",
+    answer: "Sim! Entendemos que cada situação é única e buscamos sempre oferecer condições justas e acessíveis. Analisamos cada caso individualmente para estabelecer um plano de pagamento que se adeque à sua realidade financeira, sem comprometer a qualidade do serviço prestado. Os valores e formas de pagamento são acordados de forma transparente antes do início dos trabalhos."
   }
 ];
 

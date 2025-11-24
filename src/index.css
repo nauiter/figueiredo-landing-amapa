@@ -174,4 +174,9 @@ All colors MUST be HSL.
   .trust-card {
     transition: var(--transition-bounce);
   }
+
+  /* Button tactile feedback */
+  button, .button, [role="button"] {
+    @apply active:scale-95 transition-transform duration-150;
+  }
 }
