@@ -150,6 +150,7 @@ const Testimonials = () => {
           <Button
             size="lg"
             variant="outline"
+            className="w-full sm:w-auto max-w-full"
             asChild
           >
             <a 
