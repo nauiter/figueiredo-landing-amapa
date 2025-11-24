@@ -52,7 +52,7 @@ const MetricCard = ({ metric, index }: { metric: typeof metrics[0]; index: numbe
 
 const Metrics = () => {
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden bg-black">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
