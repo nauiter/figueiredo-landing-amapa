@@ -31,7 +31,7 @@ const faqs = [
 
 const FAQ = () => {
   return (
-    <section aria-labelledby="faq-heading" className="py-16 md:py-24 bg-background">
+    <section aria-labelledby="faq-heading" className="py-16 md:py-20 lg:py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -75,7 +75,7 @@ const FAQ = () => {
               href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+tenho+algumas+d%C3%BAvidas+sobre+os+servi%C3%A7os+jur%C3%ADdicos."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 text-sm md:text-base bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Fale Conosco pelo WhatsApp
             </a>

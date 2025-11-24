@@ -51,7 +51,7 @@ const OfficeGallery = () => {
   }, [emblaApi]);
 
   return (
-    <section className="py-12 md:py-16 bg-background">
+    <section className="py-12 md:py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -100,14 +100,14 @@ const OfficeGallery = () => {
           </button>
         </div>
 
-        <div className="text-center mt-6">
+        <div className="text-center mt-8">
           <a
             href="https://www.google.com/maps/search/?api=1&query=Av.+José+do+Espírito+Santo+Araújo,+n°+492,+Macapá+-+AP"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#b8806e] text-white font-semibold rounded-[10px] shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+            className="inline-flex items-center gap-2 px-6 md:px-7 py-3 md:py-3.5 text-sm md:text-base bg-[#b8806e] text-white font-semibold rounded-[10px] shadow-lg transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
           >
-            <MapPin className="h-5 w-5" />
+            <MapPin className="h-4 w-4 md:h-5 md:w-5" />
             Veja como chegar até nós
           </a>
         </div>

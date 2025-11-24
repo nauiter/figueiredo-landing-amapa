@@ -69,7 +69,7 @@ const Metrics = () => {
       ></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 max-w-5xl mx-auto">
           {metrics.map((metric, index) => (
             <MetricCard key={index} metric={metric} index={index} />
           ))}

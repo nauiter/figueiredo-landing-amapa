@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
           
           {/* Left Side - Content */}
-          <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
+          <div className="space-y-6 md:space-y-7 lg:space-y-8 order-2 lg:order-1">
             {/* Logo */}
             <div className="animate-fade-in">
               <img 
@@ -47,7 +47,7 @@ const Hero = () => {
 
             {/* Subheadline */}
             <p 
-              className="text-lg md:text-xl text-white/90 font-light leading-relaxed animate-fade-in"
+              className="text-lg md:text-xl lg:text-2xl text-white/90 font-light leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
               Defendemos seus direitos com excelência, ética e resultados comprovados. Mais de 13 anos transformando vidas através da justiça.
