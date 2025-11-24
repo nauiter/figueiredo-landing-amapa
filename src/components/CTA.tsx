@@ -8,7 +8,7 @@ const CTA = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12 space-y-6">
+          <div className="text-center mb-12 space-y-6 animate-fade-in">
             <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">
               Proteja Seus Direitos Hoje Mesmo
             </h2>
@@ -18,7 +18,7 @@ const CTA = () => {
             </p>
           </div>
 
-          <div className="bg-card/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-accent/20 shadow-rose-glow">
+          <div className="bg-card/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-accent/20 shadow-rose-glow animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-primary-foreground mb-6 flex items-center gap-2">

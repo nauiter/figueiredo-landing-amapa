@@ -28,7 +28,7 @@ const Trust = () => {
     <section id="sobre" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16">
+          <div className="max-w-4xl mx-auto text-center space-y-6 mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Por Que Escolher a Advocacia Figueiredo?
             </h2>
@@ -44,7 +44,8 @@ const Trust = () => {
             {trustPoints.map((point, index) => (
               <div
                 key={index}
-                className="trust-card text-center p-8 rounded-2xl bg-gradient-to-br from-secondary/50 to-secondary/20 border border-border hover:border-accent transition-all duration-500 hover:shadow-rose-glow hover:-translate-y-2"
+                className="trust-card text-center p-8 rounded-2xl bg-gradient-to-br from-secondary/50 to-secondary/20 border border-border hover:border-accent transition-all duration-500 hover:shadow-rose-glow hover:-translate-y-2 animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 mb-4">
                   <point.icon className="h-8 w-8 text-accent" />

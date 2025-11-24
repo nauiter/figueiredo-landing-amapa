@@ -58,7 +58,7 @@ const Testimonials = () => {
   return (
     <section className="py-16 md:py-24 bg-[#1f1f1f]">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-6 mb-12">
+        <div className="max-w-4xl mx-auto text-center space-y-6 mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             A confiança de nossos clientes fala por nós
           </h2>
