@@ -11,7 +11,10 @@ const About = () => {
                 Sobre a Figueiredo Advocacia
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Com mais de uma década de experiência jurídica, a Advocacia Figueiredo combina técnica, ética e sensibilidade para defender os direitos de seus clientes em todo o Amapá. Nossa equipe atua com transparência e excelência, garantindo soluções seguras e eficazes em cada processo.
+                Com <strong className="text-accent">mais de 13 anos de experiência jurídica</strong>, a Advocacia Figueiredo combina técnica, ética e sensibilidade para defender os direitos de seus clientes em todo o Amapá.
+              </p>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Nossa abordagem é <strong className="text-accent">digital e humanizada</strong> - utilizamos tecnologia de ponta para oferecer eficiência e transparência, enquanto mantemos o atendimento pessoal e atencioso que cada caso merece. Nossa equipe atua com excelência, garantindo soluções seguras e eficazes em cada processo.
               </p>
             </div>
             
