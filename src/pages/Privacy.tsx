@@ -1,19 +1,81 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Home, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const Privacy = () => {
+  // Add BreadcrumbList Schema.org structured data
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://figueiredoadv.com.br"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Política de Privacidade",
+          "item": "https://figueiredoadv.com.br/privacidade"
+        }
+      ]
+    });
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
+      {/* Header with Breadcrumbs */}
       <header className="bg-primary border-b border-border py-6">
         <div className="container mx-auto px-4">
-          <Link to="/">
-            <Button variant="ghost" className="text-primary-foreground hover:text-accent">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Voltar para Início
-            </Button>
-          </Link>
+          <div className="flex flex-col gap-4">
+            <Link to="/">
+              <Button variant="ghost" className="text-primary-foreground hover:text-accent">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Voltar para Início
+              </Button>
+            </Link>
+            
+            {/* Breadcrumbs */}
+            <Breadcrumb>
+              <BreadcrumbList className="text-primary-foreground/80">
+                <BreadcrumbItem>
+                  <BreadcrumbLink asChild>
+                    <Link to="/" className="flex items-center gap-1 hover:text-accent transition-colors">
+                      <Home className="h-4 w-4" />
+                      <span>Início</span>
+                    </Link>
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator>
+                  <ChevronRight className="h-4 w-4" />
+                </BreadcrumbSeparator>
+                <BreadcrumbItem>
+                  <BreadcrumbPage className="text-accent font-medium">
+                    Política de Privacidade
+                  </BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+          </div>
         </div>
       </header>
 
