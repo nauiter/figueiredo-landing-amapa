@@ -1,4 +1,5 @@
 import symbol from "@/assets/symbol.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,6 +20,13 @@ const Footer = () => {
             Developer — Nauiter Master
           </strong>
           {" "}| Todos os direitos reservados
+          {" "}|{" "}
+          <Link 
+            to="/privacidade" 
+            className="text-white/70 hover:text-accent transition-colors underline"
+          >
+            Política de Privacidade
+          </Link>
         </p>
         <span className="block mt-2 text-[0.85rem] text-white/70 italic">
           Sic Mundus Creatus Est

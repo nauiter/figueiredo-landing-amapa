@@ -1,3 +1,4 @@
+import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AuthorityStrip from "@/components/AuthorityStrip";
@@ -16,6 +17,7 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 const Index = () => {
   return (
     <>
+      <ScrollProgress />
       <Navbar />
       <main className="min-h-screen">
         <Hero />
@@ -26,6 +28,7 @@ const Index = () => {
         <Services />
         <OfficeGallery />
         <Testimonials />
+        <FAQ />
         <BlogSection />
         <FAQ />
         <CTA />
