@@ -22,14 +22,22 @@ const Index = () => {
       <main className="min-h-screen">
         <Hero />
         <AuthorityStrip />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <Trust />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <Metrics />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <About />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <Services />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <OfficeGallery />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <Testimonials />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <FAQ />
         <BlogSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <CTA />
         <Footer />
         <StickyMobileCTA />
