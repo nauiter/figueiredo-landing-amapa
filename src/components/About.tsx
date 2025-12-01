@@ -8,13 +8,16 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                Sobre a Figueiredo Advocacia
+                Escritório de Advocacia em Macapá - Amapá
               </h2>
+              <h3 className="text-xl md:text-2xl font-semibold text-accent">
+                +13 Anos Defendendo Seus Direitos com Excelência
+              </h3>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Com <strong className="text-accent">mais de 13 anos de experiência jurídica</strong>, a Advocacia Figueiredo combina técnica, ética e sensibilidade para defender os direitos de seus clientes em todo o Amapá.
+                A <strong className="text-accent">Advocacia Figueiredo</strong> é referência em assessoria jurídica no Amapá, combinando técnica, ética e sensibilidade para defender os direitos de seus clientes em <strong className="text-accent">Direito Civil, Trabalhista, Imobiliário e de Família</strong>.
               </p>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                Nossa abordagem é <strong className="text-accent">digital e humanizada</strong> - utilizamos tecnologia de ponta para oferecer eficiência e transparência, enquanto mantemos o atendimento pessoal e atencioso que cada caso merece. Nossa equipe atua com excelência, garantindo soluções seguras e eficazes em cada processo.
+                Nossa abordagem é <strong className="text-accent">digital e humanizada</strong> - utilizamos tecnologia de ponta para oferecer eficiência e transparência, enquanto mantemos o atendimento pessoal e atencioso que cada caso merece. <strong className="text-accent">Atendimento online e presencial em Macapá</strong>, garantindo soluções seguras e eficazes.
               </p>
             </div>
             

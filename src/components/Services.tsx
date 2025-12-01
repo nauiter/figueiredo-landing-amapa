@@ -38,10 +38,13 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4 animate-fade-in">
             <h2 id="services-heading" className="text-3xl md:text-5xl font-bold text-white">
-              Nossas Especialidades
+              Áreas de Atuação Jurídica em Macapá
             </h2>
+            <h3 className="text-xl md:text-2xl text-accent font-semibold">
+              Advocacia Especializada em Direito Civil, Trabalhista, Imobiliário e Família
+            </h3>
             <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
-              Oferecemos assessoria jurídica completa e personalizada em diversas áreas do direito, 
+              Oferecemos assessoria jurídica completa e personalizada, 
               sempre focados em defender seus interesses com máxima dedicação e profissionalismo.
             </p>
           </div>
