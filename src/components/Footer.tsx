@@ -28,6 +28,14 @@ const Footer = () => {
           >
             Política de Privacidade
           </Link>
+          {" "}|{" "}
+          <Link 
+            to="/termos" 
+            className="text-white/70 hover:text-accent transition-colors underline focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#0e0e0e] rounded px-1"
+            aria-label="Ler Termos de Uso"
+          >
+            Termos de Uso
+          </Link>
         </p>
         <span className="block mt-2 text-[0.85rem] text-white/70 italic">
           Sic Mundus Creatus Est
