@@ -2,21 +2,23 @@ import { useState, useEffect } from "react";
 import { X, Cookie, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     // Check if user has already made a choice
     const cookieConsent = localStorage.getItem("cookieConsent");
-    if (!cookieConsent) {
+    if (!cookieConsent && !isMobile) {
       // Show banner after a short delay for better UX
       const timer = setTimeout(() => {
         setShowBanner(true);
       }, 1000);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [isMobile]);
 
   const handleAccept = () => {
     localStorage.setItem("cookieConsent", "accepted");
