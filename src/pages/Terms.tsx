@@ -11,7 +11,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-const Privacy = () => {
+const Terms = () => {
   // Add BreadcrumbList Schema.org structured data
   useEffect(() => {
     const script = document.createElement('script');
@@ -29,8 +29,8 @@ const Privacy = () => {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Política de Privacidade",
-          "item": "https://figueiredoadv.com.br/privacidade"
+          "name": "Termos de Uso",
+          "item": "https://figueiredoadv.com.br/termos"
         }
       ]
     });
@@ -70,7 +70,7 @@ const Privacy = () => {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem>
                   <BreadcrumbPage className="text-accent font-medium">
-                    Política de Privacidade
+                    Termos de Uso
                   </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
@@ -83,7 +83,7 @@ const Privacy = () => {
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <article className="prose prose-lg max-w-none">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Política de Privacidade
+            Termos de Uso
           </h1>
           
           <p className="text-muted-foreground text-lg mb-8">
@@ -91,105 +91,108 @@ const Privacy = () => {
           </p>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">1. Introdução</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">1. Aceitação dos Termos</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A Advocacia Figueiredo está comprometida com a proteção da privacidade e dos dados pessoais de seus clientes e visitantes do site. 
-              Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais, 
-              em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
+              Ao acessar e utilizar o site da Advocacia Figueiredo, você concorda em cumprir e estar vinculado aos seguintes 
+              Termos de Uso. Se você não concordar com qualquer parte destes termos, não deverá utilizar nosso site ou serviços.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">2. Coleta de Dados</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">2. Serviços Oferecidos</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Coletamos informações pessoais fornecidas voluntariamente por você, incluindo mas não se limitando a:
+              A Advocacia Figueiredo oferece serviços jurídicos nas seguintes áreas:
             </p>
             <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li>Nome completo, CPF, RG e outros documentos pessoais</li>
-              <li>Endereço residencial e comercial</li>
-              <li>Telefone, e-mail e outras formas de contato</li>
-              <li>Informações relacionadas ao caso jurídico (contratos, processos, documentos)</li>
-              <li>Dados de navegação no site (cookies, endereço IP, páginas visitadas)</li>
-            </ul>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">3. Uso das Informações</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Utilizamos os dados coletados exclusivamente para as seguintes finalidades:
-            </p>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li>Prestação de serviços jurídicos e acompanhamento de processos</li>
-              <li>Comunicação sobre o andamento de seu caso</li>
-              <li>Agendamento de consultas e reuniões</li>
-              <li>Cumprimento de obrigações legais e regulatórias</li>
-              <li>Melhoria dos serviços e experiência do usuário</li>
-              <li>Envio de informações jurídicas relevantes (com seu consentimento)</li>
-            </ul>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">4. Compartilhamento de Dados</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Seus dados pessoais não serão vendidos, alugados ou compartilhados com terceiros, exceto nas seguintes hipóteses:
-            </p>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li>Quando necessário para a prestação do serviço jurídico (tribunais, cartórios, peritos)</li>
-              <li>Por determinação legal ou ordem judicial</li>
-              <li>Com seu consentimento expresso</li>
-              <li>Com prestadores de serviços essenciais (tecnologia, contabilidade) sob acordo de confidencialidade</li>
-            </ul>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">5. Segurança e Armazenamento</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Adotamos medidas técnicas e organizacionais apropriadas para proteger seus dados contra acesso não autorizado, 
-              perda, destruição ou alteração. Todos os dados são armazenados em servidores seguros com criptografia. 
-              Mantemos seus dados pelo período necessário para cumprir as finalidades descritas nesta política, 
-              ou conforme exigido por lei (prazos prescricionais e processuais).
-            </p>
-          </section>
-
-          <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">6. Seus Direitos (LGPD)</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Conforme a LGPD, você tem o direito de:
-            </p>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-              <li>Confirmar a existência de tratamento de seus dados</li>
-              <li>Acessar seus dados pessoais</li>
-              <li>Corrigir dados incompletos, inexatos ou desatualizados</li>
-              <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários</li>
-              <li>Solicitar a portabilidade de seus dados</li>
-              <li>Revogar o consentimento a qualquer momento</li>
-              <li>Opor-se ao tratamento de dados em determinadas situações</li>
+              <li>Direito Civil (contratos, responsabilidade civil, indenizações)</li>
+              <li>Direito Trabalhista (reclamações, acordos, processos trabalhistas)</li>
+              <li>Direito Imobiliário (compra, venda, regularização de imóveis)</li>
+              <li>Direito de Família (divórcio, pensão alimentícia, guarda de filhos)</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Para exercer seus direitos, entre em contato conosco através dos canais de atendimento.
+              Os serviços são prestados mediante contratação formal e pagamento de honorários conforme acordado.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">7. Cookies</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">3. Uso do Site</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Nosso site utiliza cookies para melhorar a experiência de navegação e analisar o tráfego. 
-              Você pode configurar seu navegador para recusar cookies, mas isso pode afetar algumas funcionalidades do site.
+              O conteúdo deste site é fornecido apenas para fins informativos gerais. Ele não constitui aconselhamento jurídico 
+              e não deve ser usado como substituto de consultoria jurídica profissional. Para orientação específica sobre seu caso, 
+              entre em contato conosco para agendar uma consulta.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Você concorda em utilizar o site apenas para fins legais e de acordo com todas as leis aplicáveis.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">8. Alterações na Política</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">4. Propriedade Intelectual</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Esta Política de Privacidade pode ser atualizada periodicamente. Recomendamos que você revise esta página regularmente. 
-              A data da última atualização está indicada no topo deste documento.
+              Todo o conteúdo deste site, incluindo textos, gráficos, logotipos, imagens e software, é propriedade da 
+              Advocacia Figueiredo ou de seus licenciadores e é protegido por leis de propriedade intelectual brasileiras e internacionais.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              É proibida a reprodução, distribuição ou uso comercial de qualquer conteúdo sem autorização expressa por escrito.
             </p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-foreground mb-4">9. Contato</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-4">5. Limitação de Responsabilidade</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Para dúvidas sobre esta Política de Privacidade ou para exercer seus direitos, entre em contato:
+              A Advocacia Figueiredo não se responsabiliza por:
+            </p>
+            <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+              <li>Decisões tomadas com base exclusivamente nas informações disponíveis neste site</li>
+              <li>Interrupções, erros ou imprecisões no site</li>
+              <li>Links externos que possam ser acessados através deste site</li>
+              <li>Danos diretos ou indiretos resultantes do uso ou incapacidade de usar o site</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              Recomendamos sempre buscar aconselhamento jurídico profissional para situações específicas.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-foreground mb-4">6. Confidencialidade</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              As informações compartilhadas conosco através do site (formulários de contato, e-mail, WhatsApp) 
+              são tratadas com confidencialidade, em conformidade com o sigilo profissional da advocacia e a LGPD. 
+              No entanto, a relação advogado-cliente formal só é estabelecida mediante contratação expressa.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-foreground mb-4">7. Links Externos</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Este site pode conter links para sites externos. A Advocacia Figueiredo não tem controle sobre 
+              o conteúdo desses sites e não assume responsabilidade por eles. A inclusão de links não implica 
+              endosso ou recomendação.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-foreground mb-4">8. Modificações dos Termos</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              A Advocacia Figueiredo reserva-se o direito de modificar estes Termos de Uso a qualquer momento. 
+              As alterações entrarão em vigor imediatamente após sua publicação no site. É sua responsabilidade 
+              revisar periodicamente estes termos.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-foreground mb-4">9. Lei Aplicável e Jurisdição</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Estes Termos de Uso são regidos pelas leis da República Federativa do Brasil. 
+              Qualquer disputa decorrente destes termos será submetida à jurisdição exclusiva dos tribunais 
+              de Macapá, Estado do Amapá.
+            </p>
+          </section>
+
+          <section className="mb-10">
+            <h2 className="text-2xl font-bold text-foreground mb-4">10. Contato</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Para dúvidas sobre estes Termos de Uso ou para contratar nossos serviços, entre em contato:
             </p>
             <div className="bg-secondary/30 border border-border rounded-lg p-6 mt-4">
               <p className="text-foreground font-semibold mb-2">Advocacia Figueiredo</p>
@@ -214,4 +217,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Terms;
