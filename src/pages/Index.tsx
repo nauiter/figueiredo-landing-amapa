@@ -51,6 +51,7 @@ const Index = () => {
         <Testimonials />
         <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <FAQ />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <BlogSection />
         <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <CTA />
