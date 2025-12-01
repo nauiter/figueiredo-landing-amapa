@@ -45,13 +45,13 @@ const Hero = () => {
               Soluções Jurídicas Confiáveis e Eficientes no Amapá
             </h1>
 
-            {/* Subheadline */}
-            <p 
+            {/* Subheadline with Keywords */}
+            <h2 
               className="text-lg md:text-xl lg:text-2xl text-white/90 font-light leading-relaxed animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              Defendemos seus direitos com excelência, ética e resultados comprovados. Mais de 13 anos transformando vidas através da justiça.
-            </p>
+              <strong className="text-accent font-semibold">Advogada em Macapá</strong> especializada em Direito Civil, Trabalhista, Imobiliário e Família. Mais de 13 anos transformando vidas através da justiça.
+            </h2>
 
             {/* CTAs */}
             <div 
