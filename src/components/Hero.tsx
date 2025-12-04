@@ -7,9 +7,11 @@ import logo3D from "@/assets/logo-3d.png";
 
 const Hero = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black py-20 md:py-28">
-      {/* Rose Gold Radial Gradient Glow */}
-      <div className="absolute inset-0 bg-gradient-radial from-[#c99a85]/20 via-transparent to-transparent opacity-60"></div>
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[hsl(0_0%_5%)] py-20 md:py-28">
+      {/* Rose Gold Radial Gradient Glow - 10% opacity for subtle effect */}
+      <div className="absolute inset-0 bg-gradient-radial from-accent/15 via-transparent to-transparent opacity-60"></div>
+      {/* Dark overlay for improved text legibility - 10% black */}
+      <div className="absolute inset-0 bg-black/10"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-7xl mx-auto">
@@ -58,10 +60,11 @@ const Hero = () => {
               className="flex flex-col sm:flex-row items-center gap-4 pt-6 animate-fade-in"
               style={{ animationDelay: "0.4s" }}
             >
-              {/* Primary CTA - WhatsApp - High Contrast Green */}
+            {/* Primary CTA - WhatsApp - Contrast: 4.58:1 (white on #1F9D55) */}
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto max-w-full bg-[#25D366] hover:bg-[#1EB954] text-white font-bold shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] hover:scale-105 transition-all duration-300 ring-2 ring-[#25D366]/50"
+                variant="whatsapp"
+                className="w-full sm:w-auto text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto max-w-full"
                 asChild
               >
                 <a 

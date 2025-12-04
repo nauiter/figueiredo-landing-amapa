@@ -26,7 +26,7 @@ const CTA = () => {
             <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
                 <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                  <MapPin className="h-6 w-6 text-accent" />
+                  <MapPin className="h-6 w-6 text-accent" strokeWidth={1.75} />
                   Informações de Contato
                 </h3>
                 
@@ -53,7 +53,7 @@ const CTA = () => {
                     className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                   >
                     <div className="p-3 bg-accent/20 rounded-full">
-                      <Phone className="h-6 w-6 text-accent" />
+                      <Phone className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Telefone</p>
@@ -67,7 +67,7 @@ const CTA = () => {
                     className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                   >
                     <div className="p-3 bg-accent/20 rounded-full">
-                      <Mail className="h-6 w-6 text-accent" />
+                      <Mail className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">E-mail</p>
@@ -78,7 +78,7 @@ const CTA = () => {
                   {/* Hours */}
                   <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
                     <div className="p-3 bg-accent/20 rounded-full">
-                      <Clock className="h-6 w-6 text-accent" />
+                      <Clock className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Horário de Atendimento</p>
@@ -89,7 +89,7 @@ const CTA = () => {
                   {/* Address */}
                   <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl">
                     <div className="p-3 bg-accent/20 rounded-full">
-                      <MapPin className="h-6 w-6 text-accent" />
+                      <MapPin className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
                     <div>
                       <p className="text-white/60 text-sm">Endereço</p>
@@ -101,10 +101,11 @@ const CTA = () => {
                 </div>
               </div>
 
-              {/* CTA Button */}
+              {/* CTA Button - Using whatsapp variant */}
               <Button 
                 size="lg" 
-                className="w-full text-lg px-8 py-7 h-auto bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                variant="whatsapp"
+                className="w-full text-lg px-8 py-7 h-auto"
                 asChild
               >
                 <a 

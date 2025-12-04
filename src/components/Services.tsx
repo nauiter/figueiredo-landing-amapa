@@ -71,10 +71,10 @@ const Services = () => {
 
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-end p-6 md:p-8 z-10">
-                  {/* Icon */}
+                {/* Icon - Standardized: line style, strokeWidth 1.75 */}
                   <div className="mb-4 transition-transform duration-500 group-hover:scale-110">
                     <div className="inline-flex p-4 rounded-xl bg-accent/20 backdrop-blur-sm border border-accent/30">
-                      <service.icon className="h-7 w-7 text-accent" />
+                      <service.icon className="h-7 w-7 text-accent" strokeWidth={1.75} />
                     </div>
                   </div>
 
@@ -104,7 +104,7 @@ const Services = () => {
                       className="flex items-center justify-center gap-2"
                     >
                       Saiba mais
-                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" strokeWidth={1.75} />
                     </a>
                   </Button>
                 </div>
