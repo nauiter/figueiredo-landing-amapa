@@ -13,16 +13,16 @@ import office9 from "@/assets/office/office-9.webp";
 import office10 from "@/assets/office/office-10.webp";
 
 const officeImages = [
-  office1,
-  office2,
-  office3,
-  office4,
-  office5,
-  office6,
-  office7,
-  office8,
-  office9,
-  office10,
+  { src: office1, caption: "Detalhe decorativo com balança da justiça" },
+  { src: office2, caption: "Hall de entrada do escritório" },
+  { src: office3, caption: "Fachada do escritório Figueiredo Advogadas" },
+  { src: office4, caption: "Letreiro da Sociedade de Advogadas" },
+  { src: office5, caption: "Estátua da Deusa Themis símbolo da justiça" },
+  { src: office6, caption: "Sala da advogada Daniele Figueiredo" },
+  { src: office7, caption: "Recepção e espaço do café" },
+  { src: office8, caption: "Sala de espera confortável" },
+  { src: office9, caption: "Sala de atendimento principal" },
+  { src: office10, caption: "Cantinho do café para clientes" },
 ];
 
 const OfficeGallery = () => {
@@ -72,11 +72,14 @@ const OfficeGallery = () => {
                 >
                   <div className="relative overflow-hidden rounded-xl border border-white/40 transition-all duration-300 ease-in-out hover:scale-[1.03] shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:shadow-[0_6px_18px_rgba(0,0,0,0.25)]">
                     <img
-                      src={image}
-                      alt={`Escritório Advocacia Figueiredo - Ambiente ${index + 1}`}
+                      src={image.src}
+                      alt={image.caption}
                       className="w-full h-[300px] object-cover"
                       loading="lazy"
                     />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                      <p className="text-white text-sm font-medium">{image.caption}</p>
+                    </div>
                   </div>
                 </div>
               ))}
