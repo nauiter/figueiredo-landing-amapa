@@ -11,6 +11,7 @@ import OfficeGallery from "@/components/OfficeGallery";
 import Testimonials from "@/components/Testimonials";
 import BlogSection from "@/components/BlogSection";
 import FAQ from "@/components/FAQ";
+import FinalCTA from "@/components/FinalCTA";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
@@ -53,6 +54,8 @@ const Index = () => {
         <FAQ />
         <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <BlogSection />
+        <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
+        <FinalCTA />
         <div className="h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
         <CTA />
         <Footer />

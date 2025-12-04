@@ -55,23 +55,23 @@ const Hero = () => {
 
             {/* CTAs */}
             <div 
-              className="flex flex-col sm:flex-row items-center gap-4 pt-4 animate-fade-in"
+              className="flex flex-col sm:flex-row items-center gap-4 pt-6 animate-fade-in"
               style={{ animationDelay: "0.4s" }}
             >
-              {/* Primary CTA - WhatsApp */}
+              {/* Primary CTA - WhatsApp - High Contrast Green */}
               <Button 
                 size="lg" 
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto max-w-full bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-auto text-base md:text-lg px-8 md:px-10 py-6 md:py-7 h-auto max-w-full bg-[#25D366] hover:bg-[#1EB954] text-white font-bold shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.5)] hover:scale-105 transition-all duration-300 ring-2 ring-[#25D366]/50"
                 asChild
               >
                 <a 
                   href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+site.+Gostaria+de+falar+com+a+advogada+Daniele+Figueiredo."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 justify-center"
+                  className="flex items-center gap-3 justify-center"
                 >
-                  <FontAwesomeIcon icon={faWhatsapp} className="h-5 w-5" />
-                  Falar com Advogada no WhatsApp
+                  <FontAwesomeIcon icon={faWhatsapp} className="h-6 w-6" />
+                  Agendar Consulta
                 </a>
               </Button>
 
@@ -79,7 +79,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="ghost"
-                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto max-w-full border-2 border-accent/40 text-white hover:bg-accent/10 hover:border-accent font-semibold transition-all duration-300 group"
+                className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-5 md:py-6 h-auto max-w-full border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-semibold transition-all duration-300 group"
                 onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Play className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />

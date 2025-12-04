@@ -134,11 +134,11 @@ const Testimonials = () => {
                       "{testimonial.text}"
                     </p>
                     
-                    {/* Client Info */}
+                    {/* Client Info - Generic Icon Only (No Photos) */}
                     <div className="flex items-center gap-4">
-                      {/* Avatar */}
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent to-accent/60 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                        {testimonial.initials}
+                      {/* Generic User Icon */}
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 to-accent/10 border-2 border-accent/40 flex items-center justify-center shadow-lg">
+                        <span className="text-accent font-bold text-xl">{testimonial.initials}</span>
                       </div>
                       
                       <div className="flex-1">
@@ -146,13 +146,14 @@ const Testimonials = () => {
                           <p className="font-bold text-white text-lg">
                             {testimonial.name}
                           </p>
-                          <CheckCircle2 className="h-5 w-5 text-accent" />
+                          <CheckCircle2 className="h-5 w-5 text-[#25D366]" />
                         </div>
-                        <div className="flex gap-1">
-                          {[...Array(testimonial.rating)].map((_, i) => (
-                            <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-                          ))}
-                        </div>
+                        <p className="text-white/50 text-sm">Cliente Verificado</p>
+                      </div>
+                      <div className="flex gap-0.5">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                        ))}
                       </div>
                     </div>
                   </div>
