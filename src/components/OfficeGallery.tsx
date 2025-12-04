@@ -31,6 +31,7 @@ const OfficeGallery = () => {
     align: "center",
     slidesToScroll: 1,
   });
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -40,14 +41,28 @@ const OfficeGallery = () => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
+  const scrollTo = React.useCallback((index: number) => {
+    if (emblaApi) emblaApi.scrollTo(index);
+  }, [emblaApi]);
+
   React.useEffect(() => {
     if (!emblaApi) return;
+
+    const onSelect = () => {
+      setSelectedIndex(emblaApi.selectedScrollSnap());
+    };
+
+    emblaApi.on("select", onSelect);
+    onSelect();
 
     const autoplay = setInterval(() => {
       emblaApi.scrollNext();
     }, 5000);
 
-    return () => clearInterval(autoplay);
+    return () => {
+      clearInterval(autoplay);
+      emblaApi.off("select", onSelect);
+    };
   }, [emblaApi]);
 
   return (
@@ -101,6 +116,22 @@ const OfficeGallery = () => {
           >
             <ChevronRight className="h-6 w-6 text-foreground" />
           </button>
+        </div>
+
+        {/* Navigation Dots */}
+        <div className="flex justify-center gap-2 mt-6">
+          {officeImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => scrollTo(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                selectedIndex === index 
+                  ? "bg-accent w-8" 
+                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+              }`}
+              aria-label={`Ir para imagem ${index + 1}`}
+            />
+          ))}
         </div>
 
         <div className="text-center mt-8">
