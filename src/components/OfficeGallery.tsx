@@ -1,16 +1,16 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, MapPin } from "lucide-react";
-import office1 from "@/assets/office/office-1.png";
-import office2 from "@/assets/office/office-2.png";
-import office3 from "@/assets/office/office-3.png";
-import office4 from "@/assets/office/office-4.png";
-import office5 from "@/assets/office/office-5.png";
-import office6 from "@/assets/office/office-6.png";
-import office7 from "@/assets/office/office-7.png";
-import office8 from "@/assets/office/office-8.png";
-import office9 from "@/assets/office/office-9.png";
-import office10 from "@/assets/office/office-10.png";
+import office1 from "@/assets/office/office-1.webp";
+import office2 from "@/assets/office/office-2.webp";
+import office3 from "@/assets/office/office-3.webp";
+import office4 from "@/assets/office/office-4.webp";
+import office5 from "@/assets/office/office-5.webp";
+import office6 from "@/assets/office/office-6.webp";
+import office7 from "@/assets/office/office-7.webp";
+import office8 from "@/assets/office/office-8.webp";
+import office9 from "@/assets/office/office-9.webp";
+import office10 from "@/assets/office/office-10.webp";
 
 const officeImages = [
   office1,
