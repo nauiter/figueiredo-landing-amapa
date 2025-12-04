@@ -22,7 +22,7 @@ const WhatsAppWidget = () => {
           <div className="animate-fade-in bg-white rounded-lg shadow-elegant p-4 max-w-[280px] border border-accent/20">
             <div className="flex items-start justify-between mb-2">
               <div>
-                <h4 className="font-bold text-foreground text-sm">
+                <h4 className="font-semibold text-foreground text-sm">
                   Fale Conosco
                 </h4>
                 <p className="text-xs text-muted-foreground mt-1">
@@ -34,7 +34,7 @@ const WhatsAppWidget = () => {
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Fechar"
               >
-                <X className="h-4 w-4" />
+                <X className="h-4 w-4" strokeWidth={1.75} />
               </button>
             </div>
             <button

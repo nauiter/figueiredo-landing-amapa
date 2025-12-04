@@ -48,9 +48,9 @@ const Trust = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="inline-flex p-4 rounded-full bg-gradient-to-br from-accent/20 to-accent/5 mb-4">
-                  <point.icon className="h-8 w-8 text-accent" />
+                  <point.icon className="h-8 w-8 text-accent" strokeWidth={1.75} />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">
+                <h3 className="text-xl font-semibold text-foreground mb-3">
                   {point.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

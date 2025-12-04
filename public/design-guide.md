@@ -2,7 +2,108 @@
 
 ## 📋 Resumo Executivo
 
-Este documento especifica o sistema de design refinado para o site da Advocacia Figueiredo, com foco em **contraste WCAG AA**, **harmonia visual** e **legibilidade**.
+Este documento especifica o sistema de design para o site da Advocacia Figueiredo, com foco em **consistência visual**, **hierarquia tipográfica** e **acessibilidade WCAG AA**.
+
+---
+
+## 🔷 Sistema de Ícones
+
+### Especificações Padronizadas
+| Propriedade | Valor | Observação |
+|-------------|-------|------------|
+| **Biblioteca** | Lucide React | Estilo linha (outline) |
+| **Stroke Width** | `1.75` | Padrão em todo o site |
+| **Cor Primária** | `text-accent` | Rose gold da marca |
+| **Cor Secundária** | `text-white` | Para fundos escuros |
+
+### Tamanhos por Contexto
+| Contexto | Tamanho | Classe |
+|----------|---------|--------|
+| Ícones decorativos (seções) | 32-40px | `h-8 w-8` a `h-10 w-10` |
+| Ícones de cards | 28px | `h-7 w-7` |
+| Ícones inline (botões, textos) | 16-20px | `h-4 w-4` a `h-5 w-5` |
+| Navegação mobile | 24px | `h-6 w-6` |
+
+### Inventário de Ícones por Seção
+
+| Seção | Ícones | Tamanho | strokeWidth |
+|-------|--------|---------|-------------|
+| **Navbar** | Menu, X | 24px | 1.75 |
+| **Hero** | MapPin, Play | 16-20px | 1.75 |
+| **Trust** | Shield, Users, Award, MapPin | 32px | 1.75 |
+| **Services** | Scale, Briefcase, Home, Heart, ArrowRight | 28px, 16px | 1.75 |
+| **Metrics** | Scale, FileText, Briefcase | 40px | 1.75 |
+| **Testimonials** | Star, Quote, User, CheckCircle2, ChevronLeft/Right | 16-40px | 1.75 |
+| **Blog** | Calendar, Clock, ArrowRight | 16px | 1.75 |
+| **FAQ** | HelpCircle | 32px | 1.75 |
+| **CTA/Contact** | Phone, Mail, MapPin, Clock | 24px | 1.75 |
+| **FinalCTA** | Shield, ArrowRight | 40px, 20px | 1.75 |
+| **WhatsApp Widget** | X | 16px | 1.75 |
+
+### Exemplo de Uso Correto
+```tsx
+// ✅ Correto - Com strokeWidth padronizado
+<Shield className="h-8 w-8 text-accent" strokeWidth={1.75} />
+
+// ❌ Incorreto - Sem strokeWidth
+<Shield className="h-8 w-8 text-accent" />
+```
+
+---
+
+## 📝 Sistema Tipográfico
+
+### Hierarquia de Fontes
+
+| Elemento | Peso | Tamanho Desktop | Tamanho Mobile | Uso |
+|----------|------|-----------------|----------------|-----|
+| **H1 (Hero)** | `font-bold` | `text-5xl` (48px) | `text-3xl` (30px) | Título principal |
+| **H2 (Seções)** | `font-bold` | `text-4xl-5xl` (36-48px) | `text-3xl` (30px) | Títulos de seção |
+| **H3 (Cards)** | `font-semibold` | `text-xl-2xl` (20-24px) | `text-lg-xl` (18-20px) | Títulos de cards |
+| **H4 (Subtítulos)** | `font-semibold` | `text-lg` (18px) | `text-base` (16px) | Subtítulos, labels |
+| **Body** | `font-normal` | `text-lg` (18px) | `text-base` (16px) | Texto corrido |
+| **Caption** | `font-normal` | `text-sm` (14px) | `text-sm` (14px) | Legendas, meta |
+
+### Regras de Peso
+
+| Peso | Quando Usar | Exemplo |
+|------|-------------|---------|
+| `font-bold` (700) | Apenas títulos H1 e H2 | Títulos de seção principais |
+| `font-semibold` (600) | Títulos H3, H4, botões, destaques | Cards, perguntas FAQ, links |
+| `font-medium` (500) | Navegação, badges | Links do menu, categorias |
+| `font-normal` (400) | Corpo de texto, descrições | Parágrafos, respostas |
+
+### Cores de Texto
+
+| Tipo | Variável | Uso |
+|------|----------|-----|
+| **Primário** | `text-foreground` | Títulos, texto importante |
+| **Secundário** | `text-muted-foreground` | Descrições, corpo de texto |
+| **Destaque** | `text-accent` | Keywords, links, hover |
+| **Sutil** | `text-muted-foreground/70` | Legendas, timestamps |
+
+### Exemplo de Hierarquia
+
+```tsx
+// Seção típica
+<section>
+  <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+    Título da Seção
+  </h2>
+  <p className="text-lg md:text-xl text-muted-foreground">
+    Descrição da seção em texto normal.
+  </p>
+  
+  <div className="card">
+    <h3 className="text-xl font-semibold text-foreground">
+      Título do Card
+    </h3>
+    <p className="text-muted-foreground">
+      Descrição do card em peso normal.
+    </p>
+  </div>
+</section>
+```
 
 ---
 
@@ -15,180 +116,74 @@ Este documento especifica o sistema de design refinado para o site da Advocacia 
 | Rose Gold Light | `hsl(15, 50%, 68%)` | `#D9A593` | Hover states |
 | Rose Gold Dark | `hsl(15, 40%, 48%)` | `#AD6B56` | Active states |
 
-### Cores de CTA (Otimizadas para Contraste)
+### Cores de CTA
 | Nome | HSL | Hex | Contraste | Uso |
 |------|-----|-----|-----------|-----|
 | WhatsApp CTA | `hsl(142, 70%, 45%)` | `#1F9D55` | 4.58:1 | Hero CTA |
-| WhatsApp Hover | `hsl(142, 70%, 40%)` | `#1A8A4A` | 5.10:1 | Hover |
-| WhatsApp Active | `hsl(142, 70%, 35%)` | `#157A40` | 5.72:1 | Active |
 | Final CTA | `hsl(142, 76%, 38%)` | `#1A8549` | 5.20:1 | Pré-rodapé |
-| Final CTA Hover | `hsl(142, 76%, 33%)` | `#157A40` | 5.90:1 | Hover |
 
-### Neutros (Dark Mode)
-| Nome | HSL | Hex | Uso |
-|------|-----|-----|-----|
-| Background | `hsl(0, 0%, 5%)` | `#0D0D0D` | Fundo principal |
-| Card | `hsl(0, 0%, 8%)` | `#141414` | Cards |
-| Secondary | `hsl(0, 0%, 12%)` | `#1F1F1F` | Seções |
-| Border | `hsl(0, 0%, 18%)` | `#2E2E2E` | Bordas |
-
-### Hierarquia de Texto
-| Nome | HSL | Hex | Uso |
-|------|-----|-----|-----|
-| Text Primary | `hsl(0, 0%, 98%)` | `#FAFAFA` | Títulos |
-| Text Secondary | `hsl(0, 0%, 75%)` | `#BFBFBF` | Subtítulos |
-| Text Muted | `hsl(0, 0%, 60%)` | `#999999` | Legendas |
-
----
-
-## 🔘 Especificações de Botões
-
-### WhatsApp CTA (Hero)
-```css
-/* Base State */
-background: hsl(142, 70%, 45%);  /* #1F9D55 */
-color: #FFFFFF;
-box-shadow: 0 8px 30px hsla(142, 70%, 45%, 0.4);
-
-/* Hover State */
-background: hsl(142, 70%, 40%);  /* #1A8A4A */
-box-shadow: 0 12px 40px hsla(142, 70%, 45%, 0.5);
-transform: scale(1.05);
-
-/* Active State */
-background: hsl(142, 70%, 35%);  /* #157A40 */
-transform: scale(1);
-
-/* Disabled State */
-opacity: 0.5;
-pointer-events: none;
-```
-
-### Final CTA (Pré-rodapé - Mais Contrastante)
-```css
-/* Base State */
-background: hsl(142, 76%, 38%);  /* #1A8549 */
-color: #FFFFFF;
-box-shadow: 0 10px 35px hsla(142, 76%, 38%, 0.45);
-ring: 2px solid hsla(142, 76%, 50%, 0.3);
-
-/* Hover State */
-background: hsl(142, 76%, 33%);  /* #157A40 */
-box-shadow: 0 14px 45px hsla(142, 76%, 38%, 0.55);
-transform: scale(1.05);
-
-/* Active State */
-background: hsl(142, 76%, 28%);  /* #107336 */
-transform: scale(1);
-```
-
-### Outline (Secundário)
-```css
-/* Base State */
-border: 2px solid hsl(15, 45%, 58%);  /* Rose Gold */
-background: transparent;
-color: hsl(15, 45%, 58%);
-
-/* Hover State */
-background: hsl(15, 45%, 58%);
-color: #FFFFFF;
-```
-
----
-
-## 🔷 Padronização de Ícones
-
-### Especificações
-- **Biblioteca**: Lucide React (linha)
-- **Stroke Width**: 1.75 (padronizado)
-- **Tamanhos**:
-  - Pequeno: 16px (1rem)
-  - Médio: 20px (1.25rem)
-  - Grande: 24px (1.5rem)
-  - Extra Grande: 28-40px (ícones decorativos)
-- **Cor**: `text-accent` (rose gold)
-
-### Ícones Utilizados
-| Área | Ícones | Tamanho |
-|------|--------|---------|
-| Serviços | Scale, Briefcase, Home, Heart | 28px |
-| Contato | Phone, Mail, MapPin, Clock | 24px |
-| Depoimentos | Star, Quote, User, CheckCircle2 | 20-40px |
-| CTAs | ArrowRight, Shield | 20-24px |
-| Navegação | ChevronLeft, ChevronRight | 24px |
+### Hierarquia de Texto (Dark Mode)
+| Nome | HSL | Uso |
+|------|-----|-----|
+| Text Primary | `hsl(0, 0%, 98%)` | Títulos |
+| Text Secondary | `hsl(0, 0%, 70%)` | Subtítulos, muted |
+| Text Muted | `hsl(0, 0%, 60%)` | Legendas |
 
 ---
 
 ## 📐 Espaçamentos
 
-### Padding/Margin por Seção
-| Elemento | Desktop | Mobile |
+### Padding de Seções
+| Tipo | Desktop | Mobile |
+|------|---------|--------|
+| Principal | `py-20` (80px) / `py-28` (112px) | `py-16` (64px) / `py-20` (80px) |
+| Secundário | `py-16` (64px) / `py-24` (96px) | `py-12` (48px) / `py-16` (64px) |
+| Compacto | `py-12` (48px) / `py-16` (64px) | `py-8` (32px) / `py-12` (48px) |
+
+### Gap entre Elementos
+| Contexto | Desktop | Mobile |
 |----------|---------|--------|
-| Seção Principal | `py-20` (80px) / `py-28` (112px) | `py-16` (64px) / `py-20` (80px) |
-| Seção Secundária | `py-16` (64px) / `py-24` (96px) | `py-12` (48px) / `py-16` (64px) |
-| Cards | `p-8` (32px) | `p-6` (24px) |
-| Container | `px-4` (16px) | `px-4` (16px) |
-| Gap Grid | `gap-6` (24px) / `gap-12` (48px) | `gap-4` (16px) / `gap-8` (32px) |
+| Grid de cards | `gap-6` (24px) / `gap-8` (32px) | `gap-4` (16px) / `gap-6` (24px) |
+| Stack vertical | `space-y-6` (24px) | `space-y-4` (16px) |
+| Inline items | `gap-2` (8px) / `gap-4` (16px) | `gap-2` (8px) |
 
 ---
 
-## 🖼️ Tratamento de Imagens
+## ✅ Checklist de Consistência
 
-### Hero
-- **Overlay**: 10% preto (`bg-black/10`) sobre gradiente
-- **Gradiente Rose Gold**: `from-accent/15 via-transparent to-transparent` (15% opacidade)
-
-### Cards de Serviços
-- **Overlay Gradiente**: `from-black via-black/85 to-black/30`
-- **Hover**: Scale 1.1 na imagem
-
-### Otimização
-- **Formato**: WebP preferencial
-- **Lazy Loading**: `loading="lazy"` em todas imagens não críticas
-- **Dimensões**: Responsivas com aspect-ratio preservado
-
----
-
-## ✅ Checklist de Implementação
-
-### Prioridade 1: Contraste dos CTAs ✅
-- [x] Botão WhatsApp hero: 4.58:1
-- [x] Botão WhatsApp final: 5.20:1
-- [x] Estados hover/active documentados
-
-### Prioridade 2: Padronização de Ícones ✅
+### Ícones ✅
+- [x] Todos os ícones usam `strokeWidth={1.75}`
 - [x] Lucide React (linha) em todo o site
-- [x] Stroke width 1.75 padronizado
-- [x] Tamanhos consistentes
+- [x] Tamanhos consistentes por contexto
+- [x] Cor accent padronizada
 
-### Prioridade 3: CTA Pré-rodapé ✅
-- [x] Cor mais contrastante que hero
-- [x] Ring visual para destaque
-- [x] Shadow mais pronunciado
+### Tipografia ✅
+- [x] `font-bold` apenas em H1 e H2
+- [x] `font-semibold` em H3, H4, botões
+- [x] `font-normal` em corpo de texto
+- [x] Sem excesso de negrito
 
-### Prioridade 4: Neutros e Espaçamentos ✅
+### Cores ✅
+- [x] Paleta da marca preservada
 - [x] Hierarquia de texto definida
-- [x] Fundos de seção padronizados
-- [x] Espaçamentos documentados
-
-### Prioridade 5: Overlay e Otimização ✅
-- [x] Overlay 10% no hero
-- [x] Imagens WebP no office gallery
-- [x] Lazy loading ativo
+- [x] Contraste WCAG AA em CTAs
 
 ---
 
-## 📊 Valores de Contraste Calculados
+## 📊 Resumo de Aplicação
 
-| Combinação | Valor | Status |
-|------------|-------|--------|
-| #FFFFFF sobre #1F9D55 (WhatsApp) | 4.58:1 | ✅ AA |
-| #FFFFFF sobre #1A8549 (Final CTA) | 5.20:1 | ✅ AA |
-| #FFFFFF sobre #0D0D0D (Background) | 19.8:1 | ✅ AAA |
-| #C4836E sobre #0D0D0D (Accent) | 5.2:1 | ✅ AA |
-| #BFBFBF sobre #0D0D0D (Secondary) | 11.4:1 | ✅ AAA |
+| Componente | Ícones | Títulos | Subtítulos | Corpo |
+|------------|--------|---------|------------|-------|
+| Hero | ✅ 1.75 | bold | semibold | normal |
+| Trust | ✅ 1.75 | bold | semibold | normal |
+| Services | ✅ 1.75 | bold | semibold | normal |
+| Testimonials | ✅ 1.75 | bold | semibold | normal |
+| Blog | ✅ 1.75 | bold | semibold | normal |
+| FAQ | ✅ 1.75 | bold | semibold | normal |
+| CTA | ✅ 1.75 | bold | semibold | normal |
+| Footer | N/A | N/A | semibold | normal |
 
 ---
 
-*Documento gerado em: Dezembro 2024*
-*Versão: 1.0*
+*Versão: 2.0 - Atualizado com sistema tipográfico completo*
+*Data: Dezembro 2024*
