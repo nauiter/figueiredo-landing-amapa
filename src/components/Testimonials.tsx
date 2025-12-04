@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Quote, ChevronLeft, ChevronRight, CheckCircle2 } from "lucide-react";
+import { Star, Quote, ChevronLeft, ChevronRight, CheckCircle2, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
@@ -80,7 +80,7 @@ const Testimonials = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-7 w-7 fill-accent text-accent" />
+                <Star key={i} className="h-7 w-7 fill-accent text-accent" strokeWidth={1.75} />
               ))}
             </div>
             <span className="text-white text-2xl font-bold">5.0</span>
@@ -127,18 +127,18 @@ const Testimonials = () => {
                 >
                   <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 shadow-elegant hover:border-accent/30 transition-all duration-300">
                     {/* Quote Icon */}
-                    <Quote className="h-10 w-10 text-accent/40 mb-6" />
+                    <Quote className="h-10 w-10 text-accent/40 mb-6" strokeWidth={1.75} />
                     
                     {/* Testimonial Text */}
                     <p className="text-white text-lg md:text-xl leading-relaxed mb-8 italic">
                       "{testimonial.text}"
                     </p>
                     
-                    {/* Client Info - Generic Icon Only (No Photos) */}
+                    {/* Client Info - Neutral Icon (Privacy preserved) */}
                     <div className="flex items-center gap-4">
-                      {/* Generic User Icon */}
+                      {/* Neutral User Icon - No photos for privacy */}
                       <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent/30 to-accent/10 border-2 border-accent/40 flex items-center justify-center shadow-lg">
-                        <span className="text-accent font-bold text-xl">{testimonial.initials}</span>
+                        <User className="h-7 w-7 text-accent" strokeWidth={1.75} />
                       </div>
                       
                       <div className="flex-1">
@@ -146,13 +146,13 @@ const Testimonials = () => {
                           <p className="font-bold text-white text-lg">
                             {testimonial.name}
                           </p>
-                          <CheckCircle2 className="h-5 w-5 text-[#25D366]" />
+                          <CheckCircle2 className="h-5 w-5 text-[hsl(142_70%_45%)]" strokeWidth={1.75} />
                         </div>
                         <p className="text-white/50 text-sm">Cliente Verificado</p>
                       </div>
                       <div className="flex gap-0.5">
                         {[...Array(testimonial.rating)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                          <Star key={i} className="h-4 w-4 fill-accent text-accent" strokeWidth={1.75} />
                         ))}
                       </div>
                     </div>

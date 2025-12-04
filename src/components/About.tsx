@@ -24,7 +24,7 @@ const About = () => {
             <div className="relative">
               <div className="bg-[#b8806e15] rounded-xl p-8 border border-border shadow-elegant">
                 <div className="flex items-center justify-center h-64">
-                  <Building2 className="h-32 w-32 text-accent/30" />
+                  <Building2 className="h-32 w-32 text-accent/30" strokeWidth={1.75} />
                 </div>
               </div>
             </div>
