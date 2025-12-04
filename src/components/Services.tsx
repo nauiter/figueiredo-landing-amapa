@@ -1,4 +1,5 @@
-import { Scale, Briefcase, Home, Heart } from "lucide-react";
+import { Scale, Briefcase, Home, Heart, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import civilLawBg from "@/assets/services/civil-law-bg.jpg";
 import laborLawBg from "@/assets/services/labor-law-bg.jpg";
 import realEstateBg from "@/assets/services/real-estate-bg.jpg";
@@ -8,26 +9,30 @@ const services = [
   {
     icon: Scale,
     title: "Direito Civil",
-    description: "Proteção integral dos seus direitos pessoais e patrimoniais. Resolução estratégica de conflitos com foco em soluções práticas e efetivas.",
-    background: civilLawBg
+    description: "Proteção integral dos seus direitos pessoais e patrimoniais. Resolução estratégica de conflitos.",
+    background: civilLawBg,
+    whatsappMessage: "Olá, gostaria de saber mais sobre os serviços de Direito Civil."
   },
   {
     icon: Briefcase,
     title: "Direito Trabalhista",
-    description: "Defesa completa dos seus direitos trabalhistas. Atuação em processos, rescisões e negociações com empresas para garantir seus benefícios.",
-    background: laborLawBg
+    description: "Defesa completa dos seus direitos trabalhistas. Atuação em processos e rescisões.",
+    background: laborLawBg,
+    whatsappMessage: "Olá, gostaria de saber mais sobre os serviços de Direito Trabalhista."
   },
   {
     icon: Home,
     title: "Direito Imobiliário",
-    description: "Segurança jurídica em todas as suas transações imobiliárias. Análise de contratos, regularizações e resolução de conflitos de propriedade.",
-    background: realEstateBg
+    description: "Segurança jurídica em transações imobiliárias. Análise de contratos e regularizações.",
+    background: realEstateBg,
+    whatsappMessage: "Olá, gostaria de saber mais sobre os serviços de Direito Imobiliário."
   },
   {
     icon: Heart,
-    title: "Direito de Família e Sucessões",
-    description: "Atendimento humanizado em momentos delicados. Divórcios, partilhas, inventários e planejamento sucessório com sensibilidade e expertise.",
-    background: familyLawBg
+    title: "Direito de Família",
+    description: "Atendimento humanizado em divórcios, partilhas, inventários e planejamento sucessório.",
+    background: familyLawBg,
+    whatsappMessage: "Olá, gostaria de saber mais sobre os serviços de Direito de Família."
   }
 ];
 
@@ -38,14 +43,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 space-y-4 animate-fade-in">
             <h2 id="services-heading" className="text-3xl md:text-5xl font-bold text-white">
-              Áreas de Atuação Jurídica em Macapá
+              Áreas de Atuação
             </h2>
-            <h3 className="text-xl md:text-2xl text-accent font-semibold">
-              Advocacia Especializada em Direito Civil, Trabalhista, Imobiliário e Família
-            </h3>
             <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto">
-              Oferecemos assessoria jurídica completa e personalizada, 
-              sempre focados em defender seus interesses com máxima dedicação e profissionalismo.
+              Assessoria jurídica completa e personalizada para defender seus interesses.
             </p>
           </div>
 
@@ -53,7 +54,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl h-[400px] md:h-[450px] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20 animate-slide-up"
+                className="group relative overflow-hidden rounded-2xl h-[420px] md:h-[480px] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/20 animate-slide-up"
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Background Image */}
@@ -65,15 +66,15 @@ const Services = () => {
                     loading="lazy"
                   />
                   {/* Dark Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/85 to-black/30"></div>
                 </div>
 
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-end p-6 md:p-8 z-10">
                   {/* Icon */}
                   <div className="mb-4 transition-transform duration-500 group-hover:scale-110">
-                    <div className="inline-flex p-3 rounded-xl bg-accent/20 backdrop-blur-sm border border-accent/30">
-                      <service.icon className="h-6 w-6 text-accent" />
+                    <div className="inline-flex p-4 rounded-xl bg-accent/20 backdrop-blur-sm border border-accent/30">
+                      <service.icon className="h-7 w-7 text-accent" />
                     </div>
                   </div>
 
@@ -86,9 +87,26 @@ const Services = () => {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-white/80 leading-relaxed text-sm md:text-base">
+                  <p className="text-white/80 leading-relaxed text-sm md:text-base mb-6">
                     {service.description}
                   </p>
+
+                  {/* CTA Button */}
+                  <Button
+                    variant="outline"
+                    className="w-full border-accent/50 text-white hover:bg-accent hover:text-primary hover:border-accent transition-all duration-300 group/btn"
+                    asChild
+                  >
+                    <a 
+                      href={`https://wa.me/5596981293353?text=${encodeURIComponent(service.whatsappMessage)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2"
+                    >
+                      Saiba mais
+                      <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  </Button>
                 </div>
               </div>
             ))}
