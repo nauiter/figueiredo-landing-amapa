@@ -18,6 +18,7 @@ const articles = [
     fullContent: "As dívidas trabalhistas podem ser um grande problema tanto para empregadores quanto para empregados. É fundamental entender que a legislação trabalhista brasileira protege os direitos dos trabalhadores, mas também prevê mecanismos de negociação. Primeiramente, é importante identificar a natureza da dívida: verbas rescisórias, salários atrasados, FGTS não depositado, ou outras pendências. A Consolidação das Leis do Trabalho (CLT) estabelece prazos e procedimentos específicos para cada situação. Em muitos casos, a negociação extrajudicial pode ser uma alternativa viável, evitando custos e tempo de um processo judicial. Porém, é essencial contar com assessoria jurídica especializada para garantir que seus direitos sejam preservados e que o acordo seja justo e legal. Nossa equipe tem mais de uma década de experiência em direito trabalhista, auxiliando tanto trabalhadores quanto empresas a resolverem seus conflitos de forma ética e eficiente.",
     category: "Direito Trabalhista",
     readTime: "5 min",
+    publishDate: "28 Nov 2024",
     image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=500&fit=crop"
   },
   {
@@ -26,6 +27,7 @@ const articles = [
     fullContent: "O Código de Defesa do Consumidor (CDC) é uma das legislações mais importantes do Brasil, protegendo os direitos dos consumidores em todas as relações de consumo. Entre as principais garantias estão: o direito à informação clara e precisa sobre produtos e serviços, a proteção contra publicidade enganosa, o direito de arrependimento em compras online (7 dias), a garantia legal de 30 dias para produtos não duráveis e 90 dias para duráveis, além da garantia contratual oferecida pelo fabricante. Problemas com produtos defeituosos, cobranças indevidas, contratos abusivos e descumprimento de prazos são situações onde o CDC pode ser invocado. É importante documentar todas as reclamações e tentativas de solução junto à empresa. Caso não haja solução, o consumidor pode recorrer aos Procons, Juizados Especiais Cíveis ou contratar um advogado especializado. Nossa equipe está preparada para defender seus direitos e buscar a reparação adequada.",
     category: "Direito Civil",
     readTime: "6 min",
+    publishDate: "15 Nov 2024",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop"
   },
   {
@@ -34,6 +36,7 @@ const articles = [
     fullContent: "O planejamento sucessório é uma ferramenta jurídica essencial para garantir que o patrimônio construído ao longo da vida seja transmitido de forma organizada, respeitando a vontade do titular e minimizando conflitos familiares. Através de instrumentos como testamento, doação com reserva de usufruto, holding familiar e previdência privada, é possível estruturar a sucessão de bens de maneira eficiente. O planejamento adequado pode reduzir significativamente os custos com inventário e impostos, além de preservar a harmonia familiar em momentos delicados. É importante considerar aspectos como legítima dos herdeiros, regime de bens do casamento, incapacidade civil e proteção de patrimônio. Cada família possui necessidades específicas, e por isso a assessoria jurídica personalizada é fundamental. Nossa equipe tem expertise em direito de família e sucessões, oferecendo soluções sob medida para proteger seu patrimônio e garantir o futuro de seus entes queridos.",
     category: "Direito de Família",
     readTime: "7 min",
+    publishDate: "02 Nov 2024",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=500&fit=crop"
   },
 ];
@@ -83,6 +86,10 @@ const BlogSection = () => {
               {/* Content */}
               <div className="p-6 space-y-4">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1">
+                    <Calendar className="h-4 w-4" />
+                    {article.publishDate}
+                  </span>
                   <span className="flex items-center gap-1">
                     <Clock className="h-4 w-4" />
                     {article.readTime}
