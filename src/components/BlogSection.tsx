@@ -87,16 +87,16 @@ const BlogSection = () => {
               <div className="p-6 space-y-4">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className="h-4 w-4" strokeWidth={1.75} />
                     {article.publishDate}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Clock className="h-4 w-4" />
+                    <Clock className="h-4 w-4" strokeWidth={1.75} />
                     {article.readTime}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-foreground leading-tight group-hover:text-accent transition-colors">
+                <h3 className="text-xl font-semibold text-foreground leading-tight group-hover:text-accent transition-colors">
                   {article.title}
                 </h3>
                 
@@ -112,7 +112,7 @@ const BlogSection = () => {
                       onClick={() => setSelectedArticle(article)}
                     >
                       Leia mais
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" strokeWidth={1.75} />
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">

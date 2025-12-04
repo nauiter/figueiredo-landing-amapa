@@ -37,7 +37,7 @@ const FAQ = () => {
           {/* Header */}
           <div className="text-center space-y-6 mb-12">
             <div className="inline-flex p-3 rounded-full bg-accent/10 mb-4">
-              <HelpCircle className="h-8 w-8 text-accent" />
+              <HelpCircle className="h-8 w-8 text-accent" strokeWidth={1.75} />
             </div>
             <h2 id="faq-heading" className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Perguntas Frequentes
@@ -57,7 +57,7 @@ const FAQ = () => {
                 className="bg-card border border-border rounded-lg px-6 hover:border-accent/50 transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6 group">
-                  <span className="text-lg md:text-xl font-bold text-foreground group-data-[state=open]:text-accent transition-colors pr-4">
+                  <span className="text-lg md:text-xl font-semibold text-foreground group-data-[state=open]:text-accent transition-colors pr-4">
                     {faq.question}
                   </span>
                 </AccordionTrigger>

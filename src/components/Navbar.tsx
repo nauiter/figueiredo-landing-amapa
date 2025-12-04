@@ -83,9 +83,9 @@ const Navbar = () => {
                 aria-label="Menu"
               >
                 {mobileMenuOpen ? (
-                  <X className="h-6 w-6" />
+                  <X className="h-6 w-6" strokeWidth={1.75} />
                 ) : (
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-6 w-6" strokeWidth={1.75} />
                 )}
               </button>
             </SheetTrigger>

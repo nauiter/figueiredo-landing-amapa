@@ -35,7 +35,7 @@ const MetricCard = ({ metric, index }: { metric: typeof metrics[0]; index: numbe
     >
       <div className="flex justify-center">
         <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">
-          <Icon className="h-10 w-10 text-white" strokeWidth={1.5} />
+          <Icon className="h-10 w-10 text-white" strokeWidth={1.75} />
         </div>
       </div>
       <div>
