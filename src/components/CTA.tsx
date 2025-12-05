@@ -38,12 +38,12 @@ const CTA = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 bg-[#25D366]/10 rounded-xl hover:bg-[#25D366]/20 transition-colors group"
                   >
-                    <div className="p-3 bg-[#25D366] rounded-full">
+                    <div className="p-3 bg-[#25D366] rounded-full flex-shrink-0">
                       <FontAwesomeIcon icon={faWhatsapp} className="h-6 w-6 text-white" />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-white/60 text-sm">WhatsApp</p>
-                      <p className="text-white font-semibold text-lg group-hover:text-accent transition-colors">(96) 98129-3353</p>
+                      <p className="text-white font-semibold text-base sm:text-lg group-hover:text-accent transition-colors">(96) 98129-3353</p>
                     </div>
                   </a>
 
@@ -52,12 +52,12 @@ const CTA = () => {
                     href="tel:+5596981293353" 
                     className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                   >
-                    <div className="p-3 bg-accent/20 rounded-full">
+                    <div className="p-3 bg-accent/20 rounded-full flex-shrink-0">
                       <Phone className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-white/60 text-sm">Telefone</p>
-                      <p className="text-white font-semibold text-lg group-hover:text-accent transition-colors">(96) 98129-3353</p>
+                      <p className="text-white font-semibold text-base sm:text-lg group-hover:text-accent transition-colors">(96) 98129-3353</p>
                     </div>
                   </a>
 
@@ -66,35 +66,35 @@ const CTA = () => {
                     href="mailto:contato@figueiredoadv.com.br" 
                     className="flex items-center gap-4 p-4 bg-white/5 rounded-xl hover:bg-white/10 transition-colors group"
                   >
-                    <div className="p-3 bg-accent/20 rounded-full">
+                    <div className="p-3 bg-accent/20 rounded-full flex-shrink-0">
                       <Mail className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-white/60 text-sm">E-mail</p>
-                      <p className="text-white font-semibold text-lg group-hover:text-accent transition-colors">contato@figueiredoadv.com.br</p>
+                      <p className="text-white font-semibold text-base sm:text-lg group-hover:text-accent transition-colors break-all">contato@figueiredoadv.com.br</p>
                     </div>
                   </a>
 
                   {/* Hours */}
                   <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
-                    <div className="p-3 bg-accent/20 rounded-full">
+                    <div className="p-3 bg-accent/20 rounded-full flex-shrink-0">
                       <Clock className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-white/60 text-sm">Horário de Atendimento</p>
-                      <p className="text-white font-semibold text-lg">Seg a Sex · 08h às 18h</p>
+                      <p className="text-white font-semibold text-base sm:text-lg">Seg a Sex · 08h às 18h</p>
                     </div>
                   </div>
 
                   {/* Address */}
                   <div className="flex items-start gap-4 p-4 bg-white/5 rounded-xl">
-                    <div className="p-3 bg-accent/20 rounded-full">
+                    <div className="p-3 bg-accent/20 rounded-full flex-shrink-0">
                       <MapPin className="h-6 w-6 text-accent" strokeWidth={1.75} />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-white/60 text-sm">Endereço</p>
-                      <p className="text-white font-semibold">Av. José do Espírito Santo Araújo, n° 492</p>
-                      <p className="text-white/80">Perpétuo Socorro, Macapá - AP</p>
+                      <p className="text-white font-semibold text-sm sm:text-base">Av. José do Espírito Santo Araújo, n° 492</p>
+                      <p className="text-white/80 text-sm sm:text-base">Perpétuo Socorro, Macapá - AP</p>
                       <p className="text-white/60 text-sm">CEP: 68905-627</p>
                     </div>
                   </div>
