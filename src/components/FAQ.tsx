@@ -69,13 +69,13 @@ const FAQ = () => {
           </Accordion>
 
           {/* CTA Footer */}
-          <div className="text-center mt-12">
-            <p className="text-muted-foreground mb-4">Ainda tem dúvidas?</p>
+          <div className="text-center mt-10 sm:mt-12 px-4">
+            <p className="text-muted-foreground mb-4 text-sm sm:text-base">Ainda tem dúvidas?</p>
             <a
               href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+tenho+algumas+d%C3%BAvidas+sobre+os+servi%C3%A7os+jur%C3%ADdicos."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 text-sm md:text-base bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 text-sm md:text-base bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Fale Conosco pelo WhatsApp
             </a>

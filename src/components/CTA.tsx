@@ -24,13 +24,13 @@ const CTA = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Info */}
             <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-                <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-                  <MapPin className="h-6 w-6 text-accent" strokeWidth={1.75} />
-                  Informações de Contato
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-5 sm:p-6 md:p-8 border border-white/10">
+                <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6 sm:mb-8 flex items-center justify-center sm:justify-start gap-2 sm:gap-3">
+                  <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-accent flex-shrink-0" strokeWidth={1.75} />
+                  <span>Informações de Contato</span>
                 </h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   {/* WhatsApp */}
                   <a 
                     href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+site.+Gostaria+de+agendar+uma+consulta."
@@ -105,29 +105,29 @@ const CTA = () => {
               <Button 
                 size="lg" 
                 variant="whatsapp"
-                className="w-full text-lg px-8 py-7 h-auto"
+                className="w-full text-base sm:text-lg px-6 sm:px-8 py-6 sm:py-7 h-auto"
                 asChild
               >
                 <a 
                   href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+encontrei+seu+contato+atrav%C3%A9s+do+site.+Gostaria+de+agendar+uma+consulta."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3"
+                  className="flex items-center justify-center gap-2 sm:gap-3"
                 >
-                  <FontAwesomeIcon icon={faWhatsapp} className="h-6 w-6" />
-                  Agendar Consulta no WhatsApp
+                  <FontAwesomeIcon icon={faWhatsapp} className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <span className="whitespace-nowrap">Agendar Consulta no WhatsApp</span>
                 </a>
               </Button>
             </div>
 
             {/* Google Maps */}
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 border border-white/10 h-full min-h-[500px]">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-3 sm:p-4 border border-white/10 h-full min-h-[350px] sm:min-h-[400px] md:min-h-[500px]">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.817614430727!2d-51.07193492394668!3d0.03500639992716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d61f30e2cd08c91%3A0x3c4b97b9f5b2c7e8!2sAv.%20Jos%C3%A9%20do%20Esp%C3%ADrito%20Santo%20Ara%C3%BAjo%2C%20492%20-%20Perp%C3%A9tuo%20Socorro%2C%20Macap%C3%A1%20-%20AP%2C%2068905-627!5e0!3m2!1spt-BR!2sbr!4v1701700000000!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="100%"
-                  style={{ border: 0, borderRadius: '12px', minHeight: '480px' }}
+                  style={{ border: 0, borderRadius: '12px', minHeight: '320px' }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

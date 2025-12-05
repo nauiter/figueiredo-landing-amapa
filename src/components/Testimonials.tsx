@@ -180,19 +180,20 @@ const Testimonials = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in">
-          <p className="text-white/60 mb-6 text-lg">
+        <div className="text-center mt-12 sm:mt-16 animate-fade-in px-4">
+          <p className="text-white/60 mb-4 sm:mb-6 text-base sm:text-lg">
             Você também foi atendido por nós? Deixe seu depoimento!
           </p>
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-6 h-auto text-lg"
+            className="w-full sm:w-auto bg-accent hover:bg-accent/90 text-primary font-semibold px-6 sm:px-8 py-5 sm:py-6 h-auto text-base sm:text-lg"
             asChild
           >
             <a 
               href="https://wa.me/5596981293353?text=Ol%C3%A1%2C+gostaria+de+deixar+um+depoimento+sobre+o+atendimento."
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center justify-center"
             >
               Deixar Meu Depoimento
             </a>
