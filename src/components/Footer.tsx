@@ -40,20 +40,18 @@ const Footer = () => {
         </nav>
 
         {/* Copyright Row */}
-        <p className="text-[clamp(0.75rem,2.5vw,1rem)] leading-relaxed px-2">
+        <a 
+          href="https://nauitermaster.com/pt" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block text-[clamp(0.75rem,2.5vw,1rem)] leading-relaxed px-2 text-white/90 hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#0e0e0e] rounded"
+          aria-label="Visitar site do desenvolvedor Nauiter Master"
+        >
           © {new Date().getFullYear()}{" "}
-          <a 
-            href="https://nauitermaster.com/pt" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white font-semibold tracking-wide hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#0e0e0e] rounded"
-            aria-label="Visitar site do desenvolvedor Nauiter Master"
-          >
-            Developer - Nauiter Master
-          </a>
+          <strong className="font-semibold tracking-wide">Developer - Nauiter Master</strong>
           <span className="hidden sm:inline">{" "}|</span>
           <span className="block sm:inline"> Todos os direitos reservados</span>
-        </p>
+        </a>
 
         {/* Tagline Row */}
         <span className="block text-[0.85rem] text-white/70 italic">
