@@ -42,9 +42,15 @@ const Footer = () => {
         {/* Copyright Row */}
         <p className="text-[clamp(0.75rem,2.5vw,1rem)] leading-relaxed px-2">
           © {new Date().getFullYear()}{" "}
-          <strong className="text-white font-semibold tracking-wide">
+          <a 
+            href="https://nauitermaster.com/pt" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white font-semibold tracking-wide hover:text-accent transition-colors focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-[#0e0e0e] rounded"
+            aria-label="Visitar site do desenvolvedor Nauiter Master"
+          >
             Developer - Nauiter Master
-          </strong>
+          </a>
           <span className="hidden sm:inline">{" "}|</span>
           <span className="block sm:inline"> Todos os direitos reservados</span>
         </p>
